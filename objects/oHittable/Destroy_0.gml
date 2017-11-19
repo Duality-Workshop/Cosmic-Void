@@ -1,0 +1,1 @@
+oGlobalStats.global_score += value;
