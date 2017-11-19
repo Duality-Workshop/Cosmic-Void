@@ -8,6 +8,7 @@ if (has_control) {
 	key_right = 0;
 	key_space = 0;
 }
+// running = ((key_right - key_left) != 0);
 #endregion
 
 #region // Gamepad override
@@ -39,6 +40,10 @@ strike_delay--;
 if (invicibility_frames < blink_delay or !has_control) {
 	var move = key_right - key_left;
 	horizontal_speed = move * walk_speed;
+} else {
+	if (abs(horizontal_speed) > 1) {
+		horizontal_speed -= sign(horizontal_speed);
+	}
 }
 vertical_speed += object_gravity;
 #endregion
