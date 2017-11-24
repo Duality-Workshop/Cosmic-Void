@@ -37,13 +37,18 @@ strike_delay--;
 #endregion
 
 #region // Calculate movement
-if (invicibility_frames < blink_delay or !has_control) {
+if (has_control) {
 	var move = key_right - key_left;
-	horizontal_speed = move * walk_speed;
-} else {
-	if (abs(horizontal_speed) > 1) {
-		horizontal_speed -= sign(horizontal_speed);
+	if (move != 0) {
+		is_running = true;
 	}
+
+	horizontal_speed = Approach(horizontal_speed, move * walk_speed, .3);
+} else {
+	is_running = false;
+	var move = 0;
+
+	horizontal_speed = Approach(horizontal_speed, move * walk_speed, .01);
 }
 vertical_speed += object_gravity;
 #endregion
@@ -64,6 +69,13 @@ if (place_meeting(x+horizontal_speed, y, oWall)) {
 }
 
 x += horizontal_speed;
+/*
+if (abs(horizontal_speed) > 1) {
+	horizontal_speed -= sign(horizontal_speed);
+}
+if (abs(horizontal_speed) == 1) {
+	horizontal_speed = 0;
+}*/
 #endregion
 
 #region // Vertical collision
@@ -94,6 +106,11 @@ if (place_meeting(x, y+vertical_speed, oWall)) {
 y += vertical_speed;
 #endregion
 
+has_control = (invicibility_frames < blink_delay) and !dead;
+if (invicibility_frames > 0) {
+	invicibility_frames--;
+}
+
 #region // Animation
 if (!place_meeting(x, y+1, oWall)) {
 	if (y > yprevious) {
@@ -107,7 +124,7 @@ if (!place_meeting(x, y+1, oWall)) {
 	}
 		image_speed = 0;
 } else {
-	if (x != xprevious) {
+	if (x != xprevious and !dead) {
 		// Run
 		sprite_index = sPlayerRun;
 	} else {
@@ -133,7 +150,7 @@ if (x > xprevious) {
 }
 
 	#region // Dies
-	if (hp == 0) {
+	if (hp <= 0) {
 		if (!dead) {
 			ScreenShake(6, 25);
 			effect_create_above(ef_explosion, x, y, .8, c_white);

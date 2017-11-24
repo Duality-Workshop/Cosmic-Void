@@ -2,6 +2,7 @@ x = oPlayer.x;
 y = oPlayer.y+8;
 
 if (oPlayer.has_control and !oPlayer.is_striking) {
+	image_alpha = 1;
 	if (oPlayer.controller == 0) {
 		image_angle = point_direction(x, y, mouse_x, mouse_y);	
 	} else {
@@ -37,4 +38,7 @@ if (oPlayer.has_control and !oPlayer.is_striking) {
 	} else {
 		image_yscale = 1;
 	}
+}
+if (oPlayer.is_striking) {
+	image_alpha = 0;
 }

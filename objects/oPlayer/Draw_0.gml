@@ -1,10 +1,10 @@
 draw_self();
+is_blinking = false;
 
-
-if (invicibility_frames > 0 and has_control) {
-	invicibility_frames--;
-	if (hit or (alarm[1] <= 0)) {
+if (invicibility_frames > 0) {
+	if (hit or (alarm[1] <= 0) or (invicibility_frames > blink_delay)) {
 		shader_set(shWhite);
+		is_blinking = true;
 	}
 	draw_self();
 	shader_reset();

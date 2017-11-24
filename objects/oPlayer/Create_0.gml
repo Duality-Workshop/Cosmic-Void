@@ -6,16 +6,18 @@ walk_speed = 4;
 controller = 0;
 
 has_control = true;
+is_running = false;
 is_striking = false;
 
 max_hp = oPlayerStats.max_hp;
 hp = oPlayerStats.hp;
 
 invicibility_frames_base = 60;
-invicibility_frames = invicibility_frames_base;
+invicibility_frames = 0;
 
 blink_delay = invicibility_frames_base * .5;
 blink_speed = 4; // in frames
+is_blinking = false;
 
 strike_delay_base = 30;
 strike_delay = strike_delay_base;

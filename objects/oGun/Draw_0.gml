@@ -1,7 +1,7 @@
 draw_self();
 
 
-if (oPlayer.hit and oPlayer.has_control) {
+if (oPlayer.is_blinking) {
 	shader_set(shWhite);
 	draw_self();
 	shader_reset();
