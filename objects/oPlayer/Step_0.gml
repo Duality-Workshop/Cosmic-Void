@@ -2,7 +2,7 @@
 if (has_control) {
     key_left = keyboard_check(vk_left) or keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-	key_space = keyboard_check_pressed(vk_space);
+	key_space = keyboard_check_direct(vk_space);
 } else {
 	key_left = 0;
 	key_right = 0;
@@ -50,12 +50,28 @@ if (has_control) {
 
 	horizontal_speed = Approach(horizontal_speed, move * walk_speed, .01);
 }
-vertical_speed += object_gravity;
+
 #endregion
 
 #region // Jump controller
 if (place_meeting(x, y+1, oWall) and key_space) {
-	vertical_speed = -7;
+	is_jumping = true;
+	vertical_speed = jump_magnitude;
+	jump_duration = 0;
+}
+if (is_jumping and !key_space) {
+	is_jumping = false;
+}
+if (is_jumping and key_space) {
+	vertical_speed = Approach(vertical_speed, jump_speed_max, jump_speed);
+	jump_duration++;
+	if (jump_duration >= jump_duration_max) {
+		is_jumping = false;
+	}
+}
+
+if (!is_jumping) {
+	vertical_speed += object_gravity;
 }
 #endregion
 

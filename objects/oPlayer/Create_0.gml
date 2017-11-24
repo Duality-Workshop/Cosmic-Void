@@ -7,7 +7,14 @@ controller = 0;
 
 has_control = true;
 is_running = false;
+is_jumping = false;
 is_striking = false;
+
+jump_magnitude = -3;
+jump_speed = 1;
+jump_speed_max = -7;
+jump_duration_max = 15; // in frames
+jump_duration = 0;
 
 max_hp = oPlayerStats.max_hp;
 hp = oPlayerStats.hp;
