@@ -52,9 +52,10 @@ if (has_control) {
 	if (key_dash != 0 and dash_delay <= 0 and move != 0) {
 		horizontal_speed = move * dash_speed * key_dash;
 		dash_delay = dash_delay_base;
+		alarm[4] = dash_duration_base;
 	} else {
 		horizontal_speed = Approach(horizontal_speed, move * walk_speed, .3);
-		is_dashing = true;
+		is_dashing = false;
 	}
 } else {
 	is_running = false;
@@ -66,8 +67,15 @@ dash_delay--;
 #endregion
 
 #region // Dash particles
-if (is_dashing) {
+if (alarm[4] > 0) {
+	var pb_dir = 90 + 90 * move; // pointing the right direction
+	var pb_width = 15; // maximum angle deviation
+	var xp = x;
+	var yp = y;
 	
+	part_type_direction(global.pt_dash_thruster, pb_dir-pb_width, pb_dir+pb_width, 0, 0);
+	part_emitter_region(global.ps, global.pe_dash_thruster, xp-8, xp+8, yp-8, yp+8, ps_shape_rectangle, ps_distr_linear);
+	part_emitter_burst(global.ps, global.pe_dash_thruster, global.pt_dash_thruster, 5);
 }
 #endregion
 

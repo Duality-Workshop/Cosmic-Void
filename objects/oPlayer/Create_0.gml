@@ -21,7 +21,7 @@ dash_delay_base = 30; // in frames. Represents the window for double tapping.
 dash_delay = 0;
 dash_speed = walk_speed * 3;
 dash_duration_base = 5; // in frames
-dash_duration = dash_duration_base;
+dash_duration = "no";
 
 max_hp = oPlayerStats.max_hp;
 hp = oPlayerStats.hp;
@@ -51,3 +51,6 @@ vc = view_camera[0];
 camera_width = camera_get_view_width(vc);
 camera_height = camera_get_view_height(vc);
 camera_width_spacer = camera_width * .2;
+
+//Creating Emitters
+global.pe_dash_thruster = part_emitter_create(global.ps);

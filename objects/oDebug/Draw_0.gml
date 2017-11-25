@@ -35,9 +35,9 @@ draw_set_alpha(($FF00CBE5 >> 24) / $ff);
 /// @DnDHash : 36DCC2E4
 /// @DnDArgument : "x" "cx + cw - 256"
 /// @DnDArgument : "y" "cy + offset"
-/// @DnDArgument : "caption" ""dash_delay: ""
-/// @DnDArgument : "var" "oPlayer.dash_delay"
-draw_text(cx + cw - 256, cy + offset, string("dash_delay: ") + string(oPlayer.dash_delay));
+/// @DnDArgument : "caption" ""dash_duration: ""
+/// @DnDArgument : "var" "oPlayer.dash_duration"
+draw_text(cx + cw - 256, cy + offset, string("dash_duration: ") + string(oPlayer.dash_duration));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

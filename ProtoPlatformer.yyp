@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0fbaa533-2074-4fd1-b054-47846ca2c400",
+            "Value": {
+                "id": "ef264e26-f300-48af-9ec2-626eaeb6a06d",
+                "resourcePath": "objects\\oParticleSystem\\oParticleSystem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "10d37850-8c1c-453f-810e-c345402a7228",
             "Value": {
                 "id": "15bc43db-a7a5-4818-9f10-a91bbc0c99d9",
@@ -556,6 +564,14 @@
                 "id": "db3ffe87-2b1c-443a-bb28-482319ac82d8",
                 "resourcePath": "fonts\\fFinalScore\\fFinalScore.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "e460a1db-3d5d-4afc-8453-831a151018d9",
+            "Value": {
+                "id": "4d2e5c39-8068-4262-a591-37840b4651d3",
+                "resourcePath": "sprites\\spr_pt_shape_flare\\spr_pt_shape_flare.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
