@@ -1,9 +1,13 @@
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 31E1A25B
+/// @DnDInput : 2
 /// @DnDArgument : "var" "vc"
 /// @DnDArgument : "value" "view_camera[0]"
+/// @DnDArgument : "var_1" "offset"
+/// @DnDArgument : "value_1" "248"
 var vc = view_camera[0];
+var offset = 248;
 
 /// @DnDAction : YoYo Games.Common.Temp_Variable
 /// @DnDVersion : 1
@@ -30,17 +34,17 @@ draw_set_alpha(($FF00CBE5 >> 24) / $ff);
 /// @DnDVersion : 1
 /// @DnDHash : 36DCC2E4
 /// @DnDArgument : "x" "cx + cw - 256"
-/// @DnDArgument : "y" "cy + 248"
-/// @DnDArgument : "caption" ""is_jumping: ""
-/// @DnDArgument : "var" "oPlayer.is_jumping"
-draw_text(cx + cw - 256, cy + 248, string("is_jumping: ") + string(oPlayer.is_jumping));
+/// @DnDArgument : "y" "cy + offset"
+/// @DnDArgument : "caption" ""dash_delay: ""
+/// @DnDArgument : "var" "oPlayer.dash_delay"
+draw_text(cx + cw - 256, cy + offset, string("dash_delay: ") + string(oPlayer.dash_delay));
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 361C0458
 /// @DnDDisabled : 1
 /// @DnDArgument : "x" "cx + cw - 256"
-/// @DnDArgument : "y" "cy + 72"
+/// @DnDArgument : "y" "cy + offset + 12"
 /// @DnDArgument : "caption" ""score: ""
 /// @DnDArgument : "var" "oGlobalStats.global_score"
 

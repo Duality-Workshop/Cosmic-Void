@@ -3,10 +3,12 @@ if (has_control) {
     key_left = keyboard_check(vk_left) or keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 	key_space = keyboard_check_direct(vk_space);
+	key_dash = keyboard_check(vk_lshift);
 } else {
 	key_left = 0;
 	key_right = 0;
 	key_space = 0;
+	key_dash = 0;
 }
 // running = ((key_right - key_left) != 0);
 #endregion
@@ -25,10 +27,14 @@ if (abs(gamepad_axis_value(0, gp_axislh)) > 0.2) {
 if (gamepad_button_check(0, gp_face1)) {
 	key_space = 1;
 }
+
+if (gamepad_button_check(0, gp_face2)) {
+	key_dash = 1;
+}
 #endregion
 
 #region // Strike
-if (strike_delay <= 0 and has_control and (mouse_check_button_pressed(mb_right) or gamepad_button_check(0, gp_face3))) {
+if (strike_delay <= 0 and has_control and (mouse_check_button_pressed(mb_right) or gamepad_button_check_pressed(0, gp_face3))) {
 	// oStrikeHitbox.image_alpha = 1;
 	is_striking = true;
 	alarm[3] = 5;
@@ -43,14 +49,26 @@ if (has_control) {
 		is_running = true;
 	}
 
-	horizontal_speed = Approach(horizontal_speed, move * walk_speed, .3);
+	if (key_dash != 0 and dash_delay <= 0 and move != 0) {
+		horizontal_speed = move * dash_speed * key_dash;
+		dash_delay = dash_delay_base;
+	} else {
+		horizontal_speed = Approach(horizontal_speed, move * walk_speed, .3);
+		is_dashing = true;
+	}
 } else {
 	is_running = false;
 	var move = 0;
 
 	horizontal_speed = Approach(horizontal_speed, move * walk_speed, .01);
 }
+dash_delay--;
+#endregion
 
+#region // Dash particles
+if (is_dashing) {
+	
+}
 #endregion
 
 #region // Jump controller
@@ -77,7 +95,7 @@ if (!is_jumping) {
 
 #region // Horizontal collision
 if (place_meeting(x+horizontal_speed, y, oWall)) {
-	// Braking system; not satisfactory
+	// Braking system
 	while (!place_meeting(x+sign(horizontal_speed), y, oWall)) {
 		x += sign(horizontal_speed);
 	}
@@ -85,18 +103,11 @@ if (place_meeting(x+horizontal_speed, y, oWall)) {
 }
 
 x += horizontal_speed;
-/*
-if (abs(horizontal_speed) > 1) {
-	horizontal_speed -= sign(horizontal_speed);
-}
-if (abs(horizontal_speed) == 1) {
-	horizontal_speed = 0;
-}*/
 #endregion
 
 #region // Vertical collision
 if (place_meeting(x, y+vertical_speed, oWall)) {
-	// Braking system; not satisfactory
+	// Braking system
 	while (!place_meeting(x, y+sign(vertical_speed), oWall)) {
 		y += sign(vertical_speed);
 	}

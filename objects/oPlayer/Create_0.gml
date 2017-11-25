@@ -9,12 +9,19 @@ has_control = true;
 is_running = false;
 is_jumping = false;
 is_striking = false;
+is_dashing = false;
 
 jump_magnitude = -3;
 jump_speed = 1;
 jump_speed_max = -7;
 jump_duration_max = 15; // in frames
 jump_duration = 0;
+
+dash_delay_base = 30; // in frames. Represents the window for double tapping.
+dash_delay = 0;
+dash_speed = walk_speed * 3;
+dash_duration_base = 5; // in frames
+dash_duration = dash_duration_base;
 
 max_hp = oPlayerStats.max_hp;
 hp = oPlayerStats.hp;
