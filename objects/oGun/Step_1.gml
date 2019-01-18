@@ -1,5 +1,5 @@
 x = oPlayer.x;
-y = oPlayer.y+8;
+y = oPlayer.y;
 
 if (oPlayer.has_control and !oPlayer.is_striking) {
 	image_alpha = 1;

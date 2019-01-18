@@ -1,6 +1,6 @@
-/// Approach(a, b, amount)
-// Moves "a" towards "b" by "amount" and returns the result
-// Nice bcause it will not overshoot "b", and works in both directions
+/// @func Approach(a, b, amount)
+/// @desc Moves "a" towards "b" by "amount" and returns the result
+// Nice because it will not overshoot "b", and works in both directions
 // Examples:
 //      speed = Approach(speed, max_speed, acceleration);
 //      hp = Approach(hp, 0, damage_amount);

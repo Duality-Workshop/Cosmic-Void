@@ -1,8 +1,16 @@
 /// @description Update camera
 
 if (instance_exists(follow)) {
-		x_to = follow.x;
-		y_to = follow.y;
+	if (follow.y > follow_previous_y) // unless the player is falling
+	{
+		v_offset = follow.y - follow_previous_y; // in general we want the camera to be centered slightly above the player
+	}
+	else {
+		v_offset = -50; 
+	}
+	
+	x_to = follow.x;
+	y_to = follow.y + v_offset;
 }
 
 // Update object position
@@ -20,3 +28,5 @@ shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 
 // Update camera position
 camera_set_view_pos(cam, x - view_w_half, y - view_h_half);
+
+follow_previous_y = follow.y;

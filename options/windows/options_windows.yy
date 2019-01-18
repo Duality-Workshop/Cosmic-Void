@@ -10,7 +10,7 @@
     "option_windows_copyright_info": "(c) 2017 DualityWorkshop",
     "option_windows_description_info": "A GameMaker Studio 2 Proof of Concept",
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "ProtoPlatformer",
+    "option_windows_display_name": "Cosmic Void",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",

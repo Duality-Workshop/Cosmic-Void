@@ -1,0 +1,2 @@
+myTextBox = noone;
+myText = [];

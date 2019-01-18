@@ -7,6 +7,7 @@ col = $3FC78D;
 
 max_hp = 4;
 hp = max_hp;
+attack = 1;
 flash_delay = 0;
 jump_delay = random_range(60 * 3, 60 * 10);
 run_delay_base = random_range(60 * 1, 60 * 10);
