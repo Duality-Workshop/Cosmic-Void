@@ -79,12 +79,30 @@ if (has_control) {
 dash_delay--;
 
 #region // Wall jump
-if (place_meeting(x+move, y, oWall)) {
+var going_into_wall_h = place_meeting(x+move, y, oWall);
+if (going_into_wall_h) {
 	slide_wall_dir = sign(move);
 }
-if (!is_on_ground and (place_meeting(x+move, y, oWall) or (is_sliding and move == 0 and place_meeting(x+slide_wall_dir, y, oWall)))) {
+// Check if the player is still sliding
+// Can only be true if she's off the ground, and going towards the wall, or already sliding and not going in any direction, 
+//  or already sliding and going the opposite direction but still within the let_go_delay
+if (!is_on_ground and 
+	(
+		going_into_wall_h or 
+		(
+			is_sliding and 
+			place_meeting(x+slide_wall_dir, y, oWall) and
+			(
+				move == 0 or 
+				(move != slide_wall_dir and let_go_delay < let_go_delay_base)
+			)
+		)
+	)) {
 	is_sliding = true;
 	is_jumping = false;
+	if (move != slide_wall_dir) { 
+	    horizontal_speed = 0;
+	}
 } else {
 	is_sliding = false;
 }
@@ -184,8 +202,6 @@ if (place_meeting(x+horizontal_speed, y, oWall)) {
 	    is_ledge_grab = true;
 		is_sliding = false;
 		var wall_tile = instance_place(x+horizontal_speed, y, oWall);
-		//debug_value = wall_tile;
-		//x = wall_tile.x + wall_tile.sprite_width / 2;
 		y = wall_tile.y + 8;
 	}
 	horizontal_speed = 0;
@@ -276,7 +292,7 @@ if (x > xprevious) {
 
 if (is_sliding or is_ledge_grab) {
 	sprite_index = sFeryuuWall;
-	oGun.image_alpha = 0;
+	oWeapon.image_alpha = 0;
 	
 	if (!is_ledge_grab) {
 	    //Adjusting Emitter position.
@@ -292,7 +308,7 @@ if (is_sliding or is_ledge_grab) {
 		part_emitter_clear(global.ps, global.pe_Slide_flakes);
 	}
 } else {
-	oGun.image_alpha = 1;
+	oWeapon.image_alpha = 1;
 	
 	// Clearing Emitter Stream.
 	part_emitter_clear(global.ps, global.pe_Slide_flakes);

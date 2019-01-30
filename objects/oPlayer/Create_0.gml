@@ -30,6 +30,9 @@ wall_friction_up = 0.2; // The higher, the more slippery walls will be (kinda)
 wall_friction_down = .75; // The higher, the LESS slippery walls will be (kinda)
 slide_length = 0;
 
+let_go_delay_base = 3;
+let_go_delay = 0;
+
 is_ledge_grab = false;
 
 is_on_ground = false;

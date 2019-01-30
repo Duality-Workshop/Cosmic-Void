@@ -21,7 +21,7 @@ if (is_regen) {
 if (global.debug)
 {
 	draw_text(x, y - 50, is_sliding);
-	oGun.image_alpha = 0;
+	//oGun.image_alpha = 0;
 	/*draw_rectangle(x+horizontal_speed-8, y+vertical_speed-8, x+horizontal_speed+8, y+vertical_speed+8, true);
 	draw_rectangle(x+horizontal_speed-1, y+vertical_speed-1, x+horizontal_speed+1, y+vertical_speed+1, true);
 	draw_rectangle_color(x+horizontal_speed-8, y+vertical_speed-32, x+horizontal_speed+8, y+vertical_speed-16, c_red, c_red, c_red, c_red, true);

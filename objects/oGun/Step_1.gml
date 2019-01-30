@@ -14,7 +14,7 @@ if (oPlayer.has_control and !oPlayer.is_striking) {
 		}
 	
 		image_angle = controller_angle;
-		}
+	}
 
 	firing_delay = max(-1, firing_delay - 1);
 	recoil = max(0, recoil - 1);

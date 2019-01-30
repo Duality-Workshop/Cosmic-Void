@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "190d1bfb-6fbd-4c5e-a394-60e08c2e95b8",
+            "Value": {
+                "id": "10f41213-4550-4905-bfdc-997eee1e8cac",
+                "resourcePath": "sprites\\sHitscanYellow\\sHitscanYellow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f15f525-d164-475b-8076-0fd02bb0b9da",
             "Value": {
                 "id": "6bd78f33-5798-4b2a-a6e0-c894448a258e",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "2b87a3c2-2602-45ab-ba1d-8372ad4a72a6",
+            "Value": {
+                "id": "fec02d1a-56cc-4ecb-9373-5800ef3cc865",
+                "resourcePath": "scripts\\ChangeWeapon\\ChangeWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d2d9f66-a2c1-4313-b901-80e7bed245d4",
             "Value": {
                 "id": "bd23098c-e303-431f-88ed-adf483ab8129",
@@ -215,6 +231,14 @@
             }
         },
         {
+            "Key": "322e7c59-af72-429b-bbc7-e453a5217841",
+            "Value": {
+                "id": "f90ea06c-c9bd-40f9-98c6-8711e921fb42",
+                "resourcePath": "objects\\oHitscanShotgun\\oHitscanShotgun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "38a3ffca-dcad-40b5-b950-258dae052d5f",
             "Value": {
                 "id": "55cb1f42-9b4a-405f-ba6d-f7ee3b556ebf",
@@ -235,6 +259,14 @@
             "Value": {
                 "id": "2ab1a1a0-4294-4d3a-9fef-3a04df139936",
                 "resourcePath": "sprites\\sWeiholmir\\sWeiholmir.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e4077e7-e371-4fe2-9af3-617ff5d1797e",
+            "Value": {
+                "id": "c701828e-d862-490c-b08f-a8c568b3678f",
+                "resourcePath": "sprites\\sRifle\\sRifle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -324,6 +356,14 @@
                 "id": "8cb817dc-4271-4884-b3a6-f8cab9c15d32",
                 "resourcePath": "rooms\\room1\\room1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4ebfd936-9c74-4f96-b671-ba8ca134c66b",
+            "Value": {
+                "id": "8657a135-7864-4bf3-a8cd-34c2ef209b46",
+                "resourcePath": "sprites\\sHitscanBlue\\sHitscanBlue.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -439,6 +479,14 @@
             }
         },
         {
+            "Key": "69f05a43-aa10-4390-9988-9cd337006531",
+            "Value": {
+                "id": "169ab3ae-bafc-4930-b8d7-c42059af6243",
+                "resourcePath": "objects\\oHitscan\\oHitscan.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6b600144-0b9a-4707-862d-1e00f56c19d0",
             "Value": {
                 "id": "73521e6a-4fa3-4a09-9fcf-49cc9c921d1a",
@@ -503,6 +551,14 @@
             }
         },
         {
+            "Key": "75dff6f7-4274-4881-ad23-9f80f60ced34",
+            "Value": {
+                "id": "e4583389-6c55-4670-87bc-5fca11e0ea18",
+                "resourcePath": "sprites\\sWeaponPickup\\sWeaponPickup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "794536b9-0481-49e5-b574-a3590ef29bed",
             "Value": {
                 "id": "3dcf6c63-a7ed-4a49-b0d1-5471bf4364ed",
@@ -548,6 +604,14 @@
                 "id": "3245196f-c26b-47a2-9bc8-5b61e07799a6",
                 "resourcePath": "objects\\oTransition\\oTransition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "87776aa4-846d-49fa-8a25-8360591172b5",
+            "Value": {
+                "id": "a093eeaf-ce8e-4de8-84c3-f20ecc90adf5",
+                "resourcePath": "sprites\\sShotgun\\sShotgun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -707,6 +771,14 @@
             "Value": {
                 "id": "5d572a16-fb4b-4c49-b18c-bd0a21a1299a",
                 "resourcePath": "objects\\oGun\\oGun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "afac2f96-279b-4bb7-8f25-eaac55884ea5",
+            "Value": {
+                "id": "655172f3-287c-4a87-80d2-b433df855670",
+                "resourcePath": "objects\\oWeaponPickup\\oWeaponPickup.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -951,6 +1023,14 @@
             }
         },
         {
+            "Key": "ed9129a4-6f95-4b10-b0e5-656495e056bd",
+            "Value": {
+                "id": "aeebe08d-6312-4583-97bb-ccd8611ccb26",
+                "resourcePath": "sprites\\sSword\\sSword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee11c571-0fc3-4244-a89f-45bfc5f382e5",
             "Value": {
                 "id": "93c18fb2-8917-4d9b-8ad0-12ea80769bbc",
@@ -991,6 +1071,22 @@
             }
         },
         {
+            "Key": "f5ebe4a9-22a6-45b9-80d5-da1af337c82b",
+            "Value": {
+                "id": "99264bde-11b5-47db-a4b9-7d3c0b711161",
+                "resourcePath": "scripts\\WeaponSetup\\WeaponSetup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fa8a3ee6-9fb0-45cd-84c6-24c6d9153524",
+            "Value": {
+                "id": "da1e5d9a-1732-4097-b3e8-9f219efa43b9",
+                "resourcePath": "objects\\oWeapon\\oWeapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fb8123c0-f91a-40ba-b41f-566e073dd505",
             "Value": {
                 "id": "623c2b1b-1538-423b-8db9-0d6d63419fda",
@@ -1027,7 +1123,9 @@
         "f09e42ee-1d3c-4dcc-b215-7dfded6f4b01",
         "f5dec4d4-3cd4-4fc0-879a-f0ade09dcae4",
         "5eb16c0c-d237-4518-b5cd-ee175f31e810",
-        "27b83f47-028a-4641-9f50-824797b9c995"
+        "27b83f47-028a-4641-9f50-824797b9c995",
+        "2b87a3c2-2602-45ab-ba1d-8372ad4a72a6",
+        "f5ebe4a9-22a6-45b9-80d5-da1af337c82b"
     ],
     "tutorial": ""
 }
