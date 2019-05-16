@@ -5,4 +5,10 @@ WEIHOLMIR_MINI = font_add_sprite(sWeiholmirMini, ord("!"), true, 0);
 
 window_set_size(480, 460);
 
+enum Input {
+	keyboard = 0,
+	controller = 1
+	}
+input_mode = Input.keyboard;
+
 global.debug = true;

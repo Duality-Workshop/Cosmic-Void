@@ -1,4 +1,4 @@
-pressed = false;
+is_pressed = false;
 
 spacer = 10;
 boxHeight = 160;

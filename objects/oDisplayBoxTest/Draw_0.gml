@@ -1,4 +1,4 @@
-if (pressed)
+if (is_pressed)
 {
 	NineSliceBox_stretch(
 		sNineCellBox, 

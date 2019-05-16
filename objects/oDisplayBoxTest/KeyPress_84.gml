@@ -1,1 +1,1 @@
-pressed = !pressed;
+is_pressed = !is_pressed;

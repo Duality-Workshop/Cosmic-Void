@@ -5,16 +5,6 @@
     "name": "oWeaponPickup",
     "eventList": [
         {
-            "id": "80fe362b-3b3a-46b3-ac0c-b10c66edd911",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "b0300ab5-8063-483b-a2cf-8d61b6afc96b",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "afac2f96-279b-4bb7-8f25-eaac55884ea5"
-        },
-        {
             "id": "4a5da3d5-b8d9-46fa-ba71-974134d3f52e",
             "modelName": "GMEvent",
             "mvc": "1.0",

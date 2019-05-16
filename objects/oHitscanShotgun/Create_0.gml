@@ -2,6 +2,7 @@ event_inherited();
 
 max_dist = 150;
 color = c_yellow;
+lifetime = 10;
 
 // Custom parameters
 nb_projectiles = 5;
