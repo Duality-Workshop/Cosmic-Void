@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "4bb7d29a-1a7d-4c52-8221-60b357fd6a31",
+            "Value": {
+                "id": "d3e77a3f-63eb-40bb-bb8a-bc2995649cd3",
+                "resourcePath": "scripts\\state_ap_feryuu_sprint\\state_ap_feryuu_sprint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4bd1983e-1bc9-492a-bb47-431c49086204",
             "Value": {
                 "id": "59c5bb8d-60a8-4c32-a44f-270f12b96cb8",
@@ -1244,6 +1252,14 @@
                 "id": "3245196f-c26b-47a2-9bc8-5b61e07799a6",
                 "resourcePath": "objects\\oTransition\\oTransition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6",
+            "Value": {
+                "id": "17466c89-dfe6-4e1d-b468-ec37b2873403",
+                "resourcePath": "scripts\\SetupFeryuuParticles\\SetupFeryuuParticles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2291,6 +2307,7 @@
         "398729b2-a5b8-486f-ad1b-6a2cc0407856",
         "efcae412-2ed6-4bd5-80c8-ceb387ef16d9",
         "9ead9e48-6a88-49ee-9c55-be69148b2401",
+        "4bb7d29a-1a7d-4c52-8221-60b357fd6a31",
         "1f8ce49d-e15e-4f8a-830d-4d17a70c2360",
         "1a218ea6-caa5-4f95-80fd-f0f8202513da",
         "96c96512-fa40-4613-8794-fa6c9d187d95",
@@ -2308,7 +2325,8 @@
         "c44f7ab7-a8fe-49eb-8191-37db54c0491a",
         "5f8ded8c-4653-4f8d-a61e-984c4870327e",
         "9cd6f536-048d-45c5-9b93-6edb36290086",
-        "23ddf00f-015a-493b-89c4-68e0f8f31453"
+        "23ddf00f-015a-493b-89c4-68e0f8f31453",
+        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6"
     ],
     "tutorial": ""
 }

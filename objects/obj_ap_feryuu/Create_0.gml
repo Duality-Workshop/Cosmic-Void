@@ -21,7 +21,7 @@ truestate_create_state(States.wall_jump,state_ap_feryuu_wall_jump, "Wall Jump");
 //truestate_create_state(States.die,state_ap_feryuu_die, "Die");
 //truestate_create_state(States.hover,state_ap_feryuu_hover, "Hover");
 //truestate_create_state(States.rc,state_ap_feryuu_rc, "RC");
-//truestate_create_state(States.sprint,state_ap_feryuu_sprint, "Sprint");
+truestate_create_state(States.sprint,state_ap_feryuu_sprint, "Sprint");
 //truestate_create_state(States.chalk,state_ap_feryuu_chalk, "Chalk");
 
 //Set your default state. 
@@ -55,10 +55,10 @@ wall_jump_magnitude_h = 7;
 let_go_delay = 15;
 
 booster_speed = 1.5;
-booster_plus_speed = 2;
-booster_max_speed = 3;
+booster_plus_speed = 1.75;
+booster_max_speed = 2;
 
-dash_speed = move_max_speed * booster_speed;
+dash_speed = move_max_speed * booster_max_speed;
 has_dashed = false;
 
 /*max_hp = oPlayerStats.max_hp;
@@ -107,3 +107,5 @@ e_step_end = 1;
 e_draw = 2;
 e_draw_gui = 3;
 events = [0,0,0,0];
+
+SetupFeryuuParticles();

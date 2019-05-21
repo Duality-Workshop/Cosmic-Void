@@ -9,15 +9,25 @@ if(argument0==step)
 		big_dust(3,3);
 		has_dashed = true;
 		var dash_direction = get_directions();
-		hspd = dash_speed * dash_direction[0];
-		vspd = dash_speed * dash_direction[1];
+		hspd = dash_direction[0] > 0 ? max(hspd, dash_speed * dash_direction[0]) : min(hspd, dash_speed * dash_direction[0]);
+		vspd = dash_direction[1] > 0 ? max(vspd, dash_speed * dash_direction[1]) : min(vspd, dash_speed * dash_direction[1]);
 		state_var[0] = against_wall[bottom_wall]; // is it a ground dash
 		state_var[1] = false; // is dashing against wall?
+		state_var[2] = point_direction(0, 0, dash_direction[0], dash_direction[1]) + 180; // particles direction
 	}
 	ap_move_player(.35,0,1);
 	
+	//Adjusting Emitter positions. Starting Emitter Streams or Bursts.
+	var xp, yp;
+	xp = x;
+	yp = y - sprite_height / 2;
+	
+	part_type_direction(global.pt_Thruster, state_var[2] - 25, state_var[2] + 25, 0, 0);
+	part_emitter_region(global.ps, global.pe_Thruster, xp-5, xp+5, yp-5, yp+5, ps_shape_rectangle, ps_distr_linear);
+	part_emitter_burst(global.ps, global.pe_Thruster, global.pt_Thruster, 1);
+	
 	if (moving_direction != 0) {
-	    var wall_direction = (moving_direction == -1) ? left_wall : right_wall;
+	    var wall_direction = (moving_direction < 0) ? left_wall : right_wall;
 		state_var[1] = against_wall[wall_direction];
 	}
 	
@@ -27,7 +37,7 @@ if(argument0==step)
 		truestate_switch(States.jump);
 	}
 	
-	if (abs(hspd) <= move_max_speed) {
+	if (abs(hspd) <= move_max_speed and state_timer > 15) {
 	    // FALL
 		if(yprevious < y)
 		{ //Fallen past max height, move to fall;
@@ -39,9 +49,14 @@ if(argument0==step)
 		    truestate_switch(States.land);
 		}
 		
-		// RUN
+		// SPRINT & RUN
 		if (hspd != 0 and against_wall[bottom_wall]) {
-		    truestate_switch(States.run);
+		    if (dash[held]) {
+			    truestate_switch(States.sprint);
+			}
+			else {
+			    truestate_switch(States.run);
+			}
 		}
 	}
 	

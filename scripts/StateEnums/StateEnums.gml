@@ -1,20 +1,11 @@
 enum States
-{
-	//Top Down Character
-	stand,
-	walk,
-	run,
-	attack_a,
-	slide_attack,
-	item_get,
-	
-	//Top Down Doors
-	open,
-	closed,
-	
+{	
 	//Action Platformer Character
+	stand,
+	run,
 	jump,
 	dash,
+	sprint,
 	double_jump,
 	fall,
 	land,
