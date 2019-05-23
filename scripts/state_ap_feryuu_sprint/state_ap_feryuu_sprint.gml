@@ -75,7 +75,7 @@ else if(argument0==draw)
 	//Change image speed based on hspd
 	image_speed = easy_tween(TweenType.out_quint,0,1,abs(hspd)/move_max_speed);	
 	
-	show_debug_message(state_var)
+	//show_debug_message(state_var)
 	if(state_var[0] or state_var[1]) {
 		image_speed=1;
 		sprite_index=sFeryuu;	

@@ -1,17 +1,17 @@
 //STEP---------------------------------------
 if(argument0==step)
 {
-	show_debug_message(y - my_yprevious);
+	//show_debug_message(y - my_yprevious);
 	
 	if (y < my_yprevious) {
 	    ap_move_player(.35,0,2);
-		show_debug_message("fall UP");
+		//show_debug_message("fall UP");
 	}
 	else {
 	    ap_move_player(.35,0,1);
-		show_debug_message(string(current_time) + " fall DOWN");
+		//show_debug_message(string(current_time) + " fall DOWN");
 	}
-	show_debug_message(y - my_yprevious);
+	//show_debug_message(y - my_yprevious);
 	
 	// DASH
 	if((jump[pressed] or dash[pressed]) and !has_dashed)

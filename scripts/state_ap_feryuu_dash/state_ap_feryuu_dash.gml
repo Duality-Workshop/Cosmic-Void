@@ -37,7 +37,7 @@ if(argument0==step)
 		truestate_switch(States.jump);
 	}
 	
-	if (abs(hspd) <= move_max_speed and state_timer > 15) {
+	if (abs(x - xprevious) <= move_max_speed and state_timer > 15 * (1 / global.time_dilation)) {
 	    // FALL
 		if(yprevious < y)
 		{ //Fallen past max height, move to fall;

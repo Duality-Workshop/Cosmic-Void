@@ -12,3 +12,5 @@ enum Input {
 input_mode = Input.keyboard;
 
 global.debug = true;
+global.time_dilation = 1;
+global.time_delta = 0;

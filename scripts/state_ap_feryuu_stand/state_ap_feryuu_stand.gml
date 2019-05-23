@@ -6,6 +6,7 @@ if(argument0==step)
 	{
 		has_dashed = false;
 	}
+	ap_move_player(1,0,1);
 	
 	// IDLE
 	// JUMP

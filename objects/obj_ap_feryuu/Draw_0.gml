@@ -8,7 +8,8 @@ bbox_h = bbox_bottom + 1 - bbox_top;
 events[e_draw] ++;
 
 truestate_draw_current(x, y - 75);
-draw_text(x, y - 100, oGlobalConstants.input_mode);
+draw_text(x, y - 100, [global.time_dilation, global.time_delta]);
+draw_text(x, y - 125, [hspd, x - xprevious]);
 draw_circle_color(x+(bbox_w/2)+1, y, 1, noone, c_lime, true);
 draw_circle_color(x-(bbox_w/2)-1, y, 1, noone, c_lime, true);
 draw_circle_color(x, y+2, 1, noone, c_lime, true);

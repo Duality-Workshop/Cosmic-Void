@@ -31,6 +31,9 @@ truestate_set_default(States.stand);
 #endregion
 
 hspd = 0;
+prev_hspd = hspd;
+next_hspd = hspd;
+hspd_target = 0;
 vspd = 0;
 gravity_inc = .3;
 gravity_max = 46;
@@ -58,7 +61,7 @@ booster_speed = 1.5;
 booster_plus_speed = 1.75;
 booster_max_speed = 2;
 
-dash_speed = move_max_speed * booster_max_speed;
+dash_speed = move_max_speed * booster_speed;
 has_dashed = false;
 
 /*max_hp = oPlayerStats.max_hp;

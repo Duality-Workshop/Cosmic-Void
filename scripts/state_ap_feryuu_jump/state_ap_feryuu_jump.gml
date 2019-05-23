@@ -30,17 +30,11 @@ if(argument0==step)
 			{
 				state_var[2] = true; // is jumping, now
 				state_var[3] = jump_speed;
+				state_var[4] = false; // has not yet reached jump speed
 			}
 		}
 		else
 		{
-			/*if (jump[held]) {
-			    state_var[3] = Approach(state_var[3], jump_speed, jump_speed / 2);
-			}*/
-			if (state_var[3] > 0) {
-			    vspd -= state_var[3];
-				state_var[3] -= jump_speed_dec;
-			}
 		
 			ap_move_player(.35,0,1);
 		
