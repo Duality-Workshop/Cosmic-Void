@@ -1,5 +1,5 @@
-zoom = 3;
-window_scale = 2;
+zoom = 2;
+window_scale = 1;
 
 o_x = 0;
 o_y = 0;
