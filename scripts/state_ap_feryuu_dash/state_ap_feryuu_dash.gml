@@ -91,6 +91,12 @@ else if(argument0==draw)
 		
 		//Change image speed based on hspd
 		image_speed = easy_tween(TweenType.out_quint,0,1,abs(hspd)/move_max_speed);	
+		
+		if (!audio_is_playing(Step)) {
+		    if (round(image_index) == 3 or round(image_index) == 7) {
+			    audio_play_sound(Step, 10, false)
+			}
+		}
 	
 		if(state_var[0] and state_var[1]) {
 			image_speed=1;
@@ -100,6 +106,10 @@ else if(argument0==draw)
 		sprite_index = sFeryuuJump
 		image_speed = 0;
 		image_index = 0;
+	}
+	
+	if (state_new) {
+	    audio_play_sound(Jump, 10, false)
 	}
 	
 	draw_self_facing();

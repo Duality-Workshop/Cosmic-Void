@@ -12,6 +12,7 @@ if(argument0==step)
 	if(state_timer mod 20 == 0)
 	{
 		instance_create_depth(x,y,depth,obj_dust)
+		audio_play_sound(Slide, 10, false)
 	}
 	
 	if ((state_var[0] == left_wall and right[held]) or (state_var[0] == right_wall and left[held])) {

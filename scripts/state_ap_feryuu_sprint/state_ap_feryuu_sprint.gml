@@ -75,6 +75,12 @@ else if(argument0==draw)
 	//Change image speed based on hspd
 	image_speed = easy_tween(TweenType.out_quint,0,1,abs(hspd)/move_max_speed);	
 	
+	if (!audio_is_playing(Step)) {
+	    if (round(image_index) == 3 or round(image_index) == 7) {
+		    audio_play_sound(Step, 10, false)
+		}
+	}
+	
 	//show_debug_message(state_var)
 	if(state_var[0] or state_var[1]) {
 		image_speed=1;

@@ -78,5 +78,9 @@ else if(argument0==draw)
 	image_index = 0;
 	image_speed = 0;
 	
+	if (state_new) {
+	    audio_play_sound(Jump, 10, false)
+	}
+	
 	draw_self_facing();
 }

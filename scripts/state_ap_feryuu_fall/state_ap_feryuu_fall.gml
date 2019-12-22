@@ -26,6 +26,9 @@ if(argument0==step)
 	{
 		if (hspd != 0) {
 			big_dust(3,3);
+			if (!audio_is_playing(Step)) {
+			    audio_play_sound(Step, 10, false)
+			}
 		    truestate_switch(States.run);
 		} else {
 			truestate_switch(States.land);

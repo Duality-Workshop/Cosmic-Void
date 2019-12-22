@@ -1,0 +1,14 @@
+{
+    "id": "0baed88c-808c-43ed-a511-81dedb3be50e",
+    "modelName": "GMSound",
+    "mvc": "1.0",
+    "name": "Step",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "bitDepth": 1,
+    "bitRate": 128,
+    "kind": 0,
+    "preload": false,
+    "sampleRate": 44100,
+    "type": 0,
+    "volume": 1
+}

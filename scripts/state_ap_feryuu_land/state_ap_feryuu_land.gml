@@ -21,5 +21,10 @@ else if(argument0==draw)
 		image_index=0;
 	else
 		image_index=1;
+	
+	if (!audio_is_playing(Step)) {
+	    audio_play_sound(Step, 10, false)
+	}
+	
 	draw_self_facing();
 }
