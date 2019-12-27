@@ -1,7 +1,10 @@
+player = obj_ap_feryuu;
+
 enum Weapon {
     UNARMED,
 	PISTOL,
 	RIFLE,
+	SNIPER,
 	SHOTGUN,
 	SWORD
 }
@@ -11,7 +14,7 @@ enum Rank { D, C, B, A, S}
 // Setting up weapon stats
 WeaponSetup();
 
-weapon = Weapon.RIFLE;
+weapon = Weapon.SNIPER;
 ammo[array_length_1d(weapons) - 1] = 0;
 ammo[Weapon.UNARMED] = noone;
 ammo[Weapon.SWORD] = noone;

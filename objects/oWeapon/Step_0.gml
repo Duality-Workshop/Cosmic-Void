@@ -1,5 +1,6 @@
-x = oPlayer.x;
-y = oPlayer.y;
+x = player.x;
+y = player.y-30;
+
 direction = point_direction(x, y, mouse_x, mouse_y);
 if (direction > 90 and direction < 270) {
 	image_yscale = -1;
@@ -38,6 +39,8 @@ if (current_delay == 0 and projectile != noone) {
 	}
 	
 	current_recoil = recoil;
+	
+	audio_play_sound(Shoot, 10, false);
 }
 
 current_delay = max(-1, current_delay - 1);
@@ -46,4 +49,4 @@ if (current_delay == -1) {
 }
 current_recoil = max(0, floor(current_recoil * .8));
 
-depth = oPlayer.depth - 1;
+depth = player.depth - 1;

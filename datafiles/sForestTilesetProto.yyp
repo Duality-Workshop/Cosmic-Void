@@ -1,0 +1,44 @@
+{
+    "id": "7371d524-7c42-4050-09c3-60aecc0da861",
+    "modelName": "GMProject",
+    "mvc": "1.0",
+    "IsDnDProject": true,
+    "configs": [
+        
+    ],
+    "option_ecma": false,
+    "parentProject": {
+        "id": "d3505df7-103d-6bb9-d780-d79385fed25a",
+        "modelName": "GMProjectParent",
+        "mvc": "1.0",
+        "alteredResources": [
+            
+        ],
+        "hiddenResources": [
+            
+        ],
+        "projectPath": "${base_project}"
+    },
+    "resources": [
+        {
+            "Key": "7eba9dc5-b127-4bc2-64f9-0a5b378ce951",
+            "Value": {
+                "id": "e60cf90b-db64-fbed-2369-c053792f7244",
+                "resourcePath": "sprites\\sprite_sForestTilesetProto\\sprite_sForestTilesetProto.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c4ca35a-379f-c2a0-94d8-07726be41bbb",
+            "Value": {
+                "id": "849f93a3-08e3-630f-8684-229c80e64d11",
+                "resourcePath": "tilesets\\tileset_sForestTilesetProto\\tileset_sForestTilesetProto.yy",
+                "resourceType": "GMTileSet"
+            }
+        }
+    ],
+    "script_order": [
+        
+    ],
+    "tutorial": ""
+}
