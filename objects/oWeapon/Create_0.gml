@@ -1,26 +1,9 @@
 player = obj_ap_feryuu;
 
-enum Weapon {
-    UNARMED,
-	PISTOL,
-	RIFLE,
-	SNIPER,
-	SHOTGUN,
-	SWORD
-}
-
-enum Rank { D, C, B, A, S}
-
-// Setting up weapon stats
-WeaponSetup();
-
-weapon = Weapon.SNIPER;
-ammo[array_length_1d(weapons) - 1] = 0;
-ammo[Weapon.UNARMED] = noone;
-ammo[Weapon.SWORD] = noone;
+equipped_weapon = WeaponType.RIFLE;
 
 // Create local array
-ChangeWeapon(weapon);
+ChangeWeapon("Military Rifle");
 
 current_cd = 0;
 current_delay = -1;

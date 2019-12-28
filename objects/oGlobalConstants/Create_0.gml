@@ -14,3 +14,18 @@ input_mode = Input.keyboard;
 global.debug = true;
 global.time_dilation = 1;
 global.time_delta = 0;
+
+// Weapons
+enum WeaponType {
+    UNARMED,
+	PISTOL,
+	RIFLE,
+	SNIPER,
+	SHOTGUN,
+	SWORD
+}
+
+enum Rank { D, C, B, A, S}
+
+// Setting up weapon stats
+WeaponSetup();

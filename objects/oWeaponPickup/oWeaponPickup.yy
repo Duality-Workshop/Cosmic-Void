@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Weapon.RIFLE",
+            "value": "WeaponType.RIFLE",
             "varName": "weapon",
             "varType": 1
         }

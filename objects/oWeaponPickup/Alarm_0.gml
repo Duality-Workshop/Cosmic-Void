@@ -1,4 +1,4 @@
 with (oWeapon) {
-	var weapon_template = weapons[other.weapon];
-	other.sprite_index = weapon_template[? "sprite"];
+	//var weapon_template = weapon_dictionary[other.weapon];
+	other.sprite_index = sprite
 }

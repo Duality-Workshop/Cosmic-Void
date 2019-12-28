@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "1cd67832-f85b-435d-8dc1-a84e6087d9db",
+            "Value": {
+                "id": "ac7bbeb8-cb73-4221-ac28-7a4d95cf4e05",
+                "resourcePath": "scripts\\CycleWeapon\\CycleWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1dbdb3de-5d09-4ee4-9082-7f4dfc41ec4e",
             "Value": {
                 "id": "0c8434e4-3e46-4f24-bc39-a9a2afaebe35",
@@ -1396,6 +1404,14 @@
                 "id": "3b9c96ec-7ce0-4c97-97eb-85d7b4ce8e36",
                 "resourcePath": "objects\\linkyu_object_cone\\linkyu_object_cone.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "85fff033-f5d4-4243-9b3c-cdd824aa0ab5",
+            "Value": {
+                "id": "39fa6b03-1d3d-4801-88fe-8eb2bb82c271",
+                "resourcePath": "scripts\\AddWeapon\\AddWeapon.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2509,7 +2525,9 @@
         "5eb16c0c-d237-4518-b5cd-ee175f31e810",
         "27b83f47-028a-4641-9f50-824797b9c995",
         "2b87a3c2-2602-45ab-ba1d-8372ad4a72a6",
+        "1cd67832-f85b-435d-8dc1-a84e6087d9db",
         "f5ebe4a9-22a6-45b9-80d5-da1af337c82b",
+        "85fff033-f5d4-4243-9b3c-cdd824aa0ab5",
         "65cd21d3-00c1-4c78-af1a-c410e2c6f912",
         "ec8ac19b-40a5-496a-82ff-da21621dea65",
         "d44e7392-86f2-49fa-a6f8-588d28516984",
