@@ -30,3 +30,4 @@ ds_map_add(global.weapon_dictionary[? weapon_name], "cooldown", argument8);
 ds_map_add(global.weapon_dictionary[? weapon_name], "bulletspeed", argument9);
 ds_map_add(global.weapon_dictionary[? weapon_name], "automatic", argument10);
 ds_map_add(global.weapon_dictionary[? weapon_name], "rank", argument11);
+ds_map_add(global.weapon_dictionary[? weapon_name], "name", argument12);

@@ -1511,6 +1511,14 @@
             }
         },
         {
+            "Key": "8ec1a0e3-8e00-4525-ad2c-1a2cc56fbeb4",
+            "Value": {
+                "id": "44c581a8-3520-4f46-b17d-158dd03eaf9a",
+                "resourcePath": "scripts\\AddWeaponToList\\AddWeaponToList.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8feaca4c-c4cc-4751-b93f-22035e1f7ea7",
             "Value": {
                 "id": "92f63234-7c82-42f6-b3da-969946acfe9f",
@@ -2576,7 +2584,8 @@
         "5f8ded8c-4653-4f8d-a61e-984c4870327e",
         "9cd6f536-048d-45c5-9b93-6edb36290086",
         "23ddf00f-015a-493b-89c4-68e0f8f31453",
-        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6"
+        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6",
+        "8ec1a0e3-8e00-4525-ad2c-1a2cc56fbeb4"
     ],
     "tutorial": ""
 }

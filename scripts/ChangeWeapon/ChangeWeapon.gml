@@ -14,3 +14,5 @@ bulletspeed = wp_map[? "bulletspeed"];
 automatic = wp_map[? "automatic"];
 rank = wp_map[? "rank"];
 name = wp_map[? "name"];
+
+equipped_weapon = wp_map[? "type"];

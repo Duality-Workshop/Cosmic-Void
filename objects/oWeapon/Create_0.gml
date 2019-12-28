@@ -1,9 +1,9 @@
 player = obj_ap_feryuu;
 
-equipped_weapon = WeaponType.RIFLE;
+equipped_weapon = WeaponType.SHOTGUN;
 
 // Create local array
-ChangeWeapon("Military Rifle");
+ChangeWeapon("Rustic Shotgun");
 
 current_cd = 0;
 current_delay = -1;

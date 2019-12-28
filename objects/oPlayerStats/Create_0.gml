@@ -14,5 +14,7 @@ inventory_weapons = ds_map_create();
 inventory_weapons[? WeaponType.PISTOL] = global.weapon_dictionary[? "Military Pistols"];
 inventory_weapons[? WeaponType.RIFLE] = global.weapon_dictionary[? "Military Rifle"];
 inventory_weapons[? WeaponType.SHOTGUN] = global.weapon_dictionary[? "Rustic Shotgun"];
+inventory_weapons[? WeaponType.SNIPER] = noone;
+inventory_weapons[? WeaponType.SWORD] = noone;
 
 
