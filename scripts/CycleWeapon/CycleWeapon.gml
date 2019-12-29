@@ -15,7 +15,7 @@ AddWeaponToList(weapon_list, WeaponType.PISTOL);	// Ideally, should be replaced 
 AddWeaponToList(weapon_list, WeaponType.RIFLE);
 AddWeaponToList(weapon_list, WeaponType.SHOTGUN);
 AddWeaponToList(weapon_list, WeaponType.SNIPER);
-AddWeaponToList(weapon_list, WeaponType.SWORD);
+//AddWeaponToList(weapon_list, WeaponType.SWORD);	// The sword shouldn't be counted as it's the melee weapon
 
 var weapon_id = ds_list_find_index(weapon_list, equipped_weapon);
 var size = ds_list_size(weapon_list);

@@ -1,34 +1,34 @@
 {
-    "id": "0fbaa533-2074-4fd1-b054-47846ca2c400",
+    "id": "a9ca3d41-9053-47de-a9bb-f5b434d76d98",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oParticleSystem",
+    "name": "oInterfaceManager",
     "eventList": [
         {
-            "id": "88249211-7a58-4c1f-86a0-4c40b8a0b206",
+            "id": "83dd4793-a254-43c2-8110-280381f2df06",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "a9ca3d41-9053-47de-a9bb-f5b434d76d98"
+        },
+        {
+            "id": "45644f78-9bb5-4452-ba27-a187d5315204",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0fbaa533-2074-4fd1-b054-47846ca2c400"
-        },
-        {
-            "id": "3dd30d70-441b-4b16-b182-e0265d5ec1d6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "0fbaa533-2074-4fd1-b054-47846ca2c400"
+            "m_owner": "a9ca3d41-9053-47de-a9bb-f5b434d76d98"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e460a1db-3d5d-4afc-8453-831a151018d9",
+    "spriteId": "0cc4800e-93ba-4273-9d7f-f3faa51b715b",
     "visible": true
 }

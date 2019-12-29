@@ -1719,6 +1719,14 @@
             }
         },
         {
+            "Key": "a9ca3d41-9053-47de-a9bb-f5b434d76d98",
+            "Value": {
+                "id": "fa2558db-f899-47a9-aa26-e5c1c33d333f",
+                "resourcePath": "objects\\oInterfaceManager\\oInterfaceManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9f65f81-f9a3-4a86-8f6a-38515649f5a6",
             "Value": {
                 "id": "a41772fb-f987-4517-a12f-1f3e3a4ef900",
