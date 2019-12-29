@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "5fe8e459-29c6-4a88-a57d-1131f7487be5",
+            "Value": {
+                "id": "358c04cd-5fcb-4962-a744-91d122e6d50c",
+                "resourcePath": "sprites\\sWeaponwheelArrow\\sWeaponwheelArrow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60082e15-8263-4246-8f71-23de6c8d85af",
             "Value": {
                 "id": "fa6d2a26-b42b-432f-a4e2-07f483f8c92e",
@@ -1443,6 +1451,14 @@
             "Value": {
                 "id": "a093eeaf-ce8e-4de8-84c3-f20ecc90adf5",
                 "resourcePath": "sprites\\sShotgun\\sShotgun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89199ed1-3fa0-44ca-b27b-215d3dcdc26b",
+            "Value": {
+                "id": "af1b802c-20fa-4a75-8a4c-7e3275979598",
+                "resourcePath": "sprites\\sEquippedIcon\\sEquippedIcon.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2544,6 +2560,7 @@
         "1cd67832-f85b-435d-8dc1-a84e6087d9db",
         "f5ebe4a9-22a6-45b9-80d5-da1af337c82b",
         "85fff033-f5d4-4243-9b3c-cdd824aa0ab5",
+        "8ec1a0e3-8e00-4525-ad2c-1a2cc56fbeb4",
         "65cd21d3-00c1-4c78-af1a-c410e2c6f912",
         "ec8ac19b-40a5-496a-82ff-da21621dea65",
         "d44e7392-86f2-49fa-a6f8-588d28516984",
@@ -2592,8 +2609,7 @@
         "5f8ded8c-4653-4f8d-a61e-984c4870327e",
         "9cd6f536-048d-45c5-9b93-6edb36290086",
         "23ddf00f-015a-493b-89c4-68e0f8f31453",
-        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6",
-        "8ec1a0e3-8e00-4525-ad2c-1a2cc56fbeb4"
+        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6"
     ],
     "tutorial": ""
 }

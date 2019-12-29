@@ -55,6 +55,15 @@ if(point_distance(0,0,_h,_v) > 0)
 	dpad_dir=point_direction(0,0,_h,_v);
 else
 	dpad_dir=no_direction;
+	
+_key = mb_left;
+_button = gp_face1;
+confirm[pressed] = mouse_check_button_pressed(_key) or gamepad_button_check_pressed(0, _button);
+confirm[released] = mouse_check_button_released(_key) or gamepad_button_check_released(0, _button);
+if(mouse_check_button(_key) or gamepad_button_check(0, _button))
+	confirm[held]++;
+else
+	confirm[held]=0;
 
 /*key_left = keyboard_check(vk_left) or keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));

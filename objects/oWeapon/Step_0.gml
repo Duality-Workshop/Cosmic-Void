@@ -3,10 +3,11 @@ y = player.y-30;
 
 direction = point_direction(x, y, mouse_x, mouse_y);
 if (direction > 90 and direction < 270) {
-	image_yscale = -1;
+	image_yscale = -0.5;
 } else {
-	image_yscale = 1;
+	image_yscale = 0.5;
 }
+image_xscale = 0.5;
 
 image_angle = direction;
 
