@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "034422b2-b923-4701-9012-621eec3c585c",
+            "Value": {
+                "id": "60a85691-9ba7-4e43-887c-5ad579528aaa",
+                "resourcePath": "scripts\\state_okaimu_hit\\state_okaimu_hit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0479fb74-9804-42b0-9966-63b5169fbee6",
             "Value": {
                 "id": "73ff9c76-3f83-45db-96b6-bb0b159a4dae",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "23ae9e9e-8c90-4dd9-8c43-c2790fb884e1",
+            "Value": {
+                "id": "fe1d3b98-e0ca-4d53-8094-176ad8ace505",
+                "resourcePath": "scripts\\state_okaimu_flee\\state_okaimu_flee.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "23ddf00f-015a-493b-89c4-68e0f8f31453",
             "Value": {
                 "id": "a0a76237-f048-45f6-a807-6255753efdc7",
@@ -684,6 +700,14 @@
                 "id": "5591a41b-5825-4180-9d10-204a7f3475f3",
                 "resourcePath": "sprites\\spr_ramp_tl\\spr_ramp_tl.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3a4b810a-0e6a-4b51-8fbb-29015ed3e2cc",
+            "Value": {
+                "id": "9b041efb-2150-4875-b890-060161ab5232",
+                "resourcePath": "scripts\\state_okaimu_back\\state_okaimu_back.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1383,6 +1407,14 @@
             }
         },
         {
+            "Key": "7faaf1d0-53b9-4bde-a95f-7648acb83435",
+            "Value": {
+                "id": "8b38e128-33f5-48f7-a52e-7d5902fe7d8e",
+                "resourcePath": "scripts\\state_okaimu_land\\state_okaimu_land.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "81ad7c27-271c-4342-8965-a991a25b7986",
             "Value": {
                 "id": "ff399b16-34cc-4275-990d-48fbdc58e3d9",
@@ -1743,6 +1775,14 @@
             }
         },
         {
+            "Key": "a769f2c7-f084-43a5-a133-fc613a5b72f1",
+            "Value": {
+                "id": "5551f0e4-5c8f-49c3-b1bf-6084c561a3cf",
+                "resourcePath": "scripts\\state_okaimu_attack\\state_okaimu_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a7fae46a-24b8-4571-b23c-c4c27df0982a",
             "Value": {
                 "id": "fff2fcc0-0774-4ed9-a040-071a8d1b54ca",
@@ -1788,6 +1828,14 @@
                 "id": "a34af0dd-9394-4f98-a18b-34abbff86e4c",
                 "resourcePath": "sprites\\spr_ap_pc_idle\\spr_ap_pc_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "accda64b-ecd8-41f6-9797-4960367570fb",
+            "Value": {
+                "id": "ada8a3e1-04d0-4ae4-a644-b8d7787b2dc6",
+                "resourcePath": "scripts\\state_okaimu_jump\\state_okaimu_jump.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2231,6 +2279,14 @@
             }
         },
         {
+            "Key": "dc66871e-259c-459b-9306-00b352ce5abf",
+            "Value": {
+                "id": "fdbd4041-47d5-453f-83e1-989ada23aa21",
+                "resourcePath": "scripts\\state_okaimu_approach\\state_okaimu_approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de0252ea-5fd5-4b93-8585-d123ac131432",
             "Value": {
                 "id": "0485c36f-6bdb-4300-9556-023158a56b79",
@@ -2275,6 +2331,14 @@
             "Value": {
                 "id": "4c2580a1-5faf-4b2c-826a-cd76c5dcabf0",
                 "resourcePath": "scripts\\NineSliceBox_stretch\\NineSliceBox_stretch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e1f7566c-2f45-4b2f-9ea0-75250f1f538f",
+            "Value": {
+                "id": "4d289563-5da8-42f0-ae30-2cf456445154",
+                "resourcePath": "scripts\\state_okaimu_die\\state_okaimu_die.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2324,6 +2388,22 @@
                 "id": "76e84a8a-d408-4634-9e45-7c6383c4ac7e",
                 "resourcePath": "views\\e89977ad-b623-4d9a-b35c-bfb0ff91f3e0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e94f2ea1-445e-49b5-bb58-61162b9634e0",
+            "Value": {
+                "id": "2d660d2f-a57b-4727-8cf6-38c4211f8924",
+                "resourcePath": "scripts\\state_okaimu_idle\\state_okaimu_idle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e9f65d83-7ed4-4e8a-8448-dc8d049a36b4",
+            "Value": {
+                "id": "e3cf91bb-4461-4a6d-87d0-ae0988e89bfd",
+                "resourcePath": "scripts\\state_okaimu_fall\\state_okaimu_fall.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2624,6 +2704,16 @@
         "9ead9e48-6a88-49ee-9c55-be69148b2401",
         "4bb7d29a-1a7d-4c52-8221-60b357fd6a31",
         "62611110-72cb-41d8-95bd-480f29d59443",
+        "e94f2ea1-445e-49b5-bb58-61162b9634e0",
+        "dc66871e-259c-459b-9306-00b352ce5abf",
+        "3a4b810a-0e6a-4b51-8fbb-29015ed3e2cc",
+        "accda64b-ecd8-41f6-9797-4960367570fb",
+        "e9f65d83-7ed4-4e8a-8448-dc8d049a36b4",
+        "7faaf1d0-53b9-4bde-a95f-7648acb83435",
+        "a769f2c7-f084-43a5-a133-fc613a5b72f1",
+        "23ae9e9e-8c90-4dd9-8c43-c2790fb884e1",
+        "034422b2-b923-4701-9012-621eec3c585c",
+        "e1f7566c-2f45-4b2f-9ea0-75250f1f538f",
         "1f8ce49d-e15e-4f8a-830d-4d17a70c2360",
         "1a218ea6-caa5-4f95-80fd-f0f8202513da",
         "96c96512-fa40-4613-8794-fa6c9d187d95",
