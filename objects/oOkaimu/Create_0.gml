@@ -27,5 +27,18 @@ hp = max_hp;
 
 walk_speed = 5;
 jump_strength = 10;
+weight = 5;
 
 face_direction = 1;
+
+idle_time = 500;
+attack_time = 60;
+
+min_distance = 64;
+max_distance = 128;
+
+horizontal_speed = 0;
+vertical_speed = 0;
+
+target_x = 0;
+target_y = 0;

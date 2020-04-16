@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "05b0832e-33f9-4871-a420-8ed0f597ea02",
+            "Value": {
+                "id": "94d3efc9-e3aa-4474-b204-100627cea640",
+                "resourcePath": "scripts\\IsBetween\\IsBetween.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05f2f321-2200-4cbe-a80c-2e6d824a2cb7",
             "Value": {
                 "id": "49820a38-889a-4d8c-a56e-e9df0b4af4bb",
@@ -2732,7 +2740,8 @@
         "5f8ded8c-4653-4f8d-a61e-984c4870327e",
         "9cd6f536-048d-45c5-9b93-6edb36290086",
         "23ddf00f-015a-493b-89c4-68e0f8f31453",
-        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6"
+        "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6",
+        "05b0832e-33f9-4871-a420-8ed0f597ea02"
     ],
     "tutorial": ""
 }

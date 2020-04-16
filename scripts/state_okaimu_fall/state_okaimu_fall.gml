@@ -7,19 +7,21 @@ if(argument0==step)
 		has_dashed = false;
 	}
 	
-	var feryuu_x = obj_ap_feryuu.x;
-	var feryuu_y = obj_ap_feryuu.y;
-	var sight = collision_line(x, y, feryuu_x, feryuu_y, oWall, false, true);
+	vertical_speed = Approach(vertical_speed, weight, 1);
+	var next_position = vertical_speed;
 	
-	//STAND
-	//IDLE
-	//APPROACH
-	//BACK
-	//JUMP
-	//FALL
+	while (position_meeting(x, y+next_position, _solid_parent)) {
+	    next_position = Approach(next_position, 0, 1);
+	}
+	
+	y += next_position;
+	
+	
 	//LAND
-	//ATTACK
-	//FLEE
+	if (position_meeting(x, y+next_position, _solid_parent)) {
+	    truestate_switch(EnemyStates.LAND);
+	}
+	
 	//HIT
 	//DIE
 	if(hp <= 0)
