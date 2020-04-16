@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "1b7e6861-aa33-4191-935a-2984797c4d9b",
+            "Value": {
+                "id": "042ae766-be7d-4882-a231-34ab28591ccb",
+                "resourcePath": "objects\\oOkaimu\\oOkaimu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1cd67832-f85b-435d-8dc1-a84e6087d9db",
             "Value": {
                 "id": "ac7bbeb8-cb73-4221-ac28-7a4d95cf4e05",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "223e3592-b56e-4417-a70d-66c762a7f040",
+            "Value": {
+                "id": "51bf6dab-51d6-44e6-9b1e-72011f9dfe36",
+                "resourcePath": "views\\223e3592-b56e-4417-a70d-66c762a7f040.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "22d028c9-4828-4452-8224-758ac4dae2d7",
             "Value": {
                 "id": "223b1d6e-54a7-4f95-91fb-e254be8e7036",
@@ -452,6 +468,14 @@
                 "id": "b7e0c437-5197-41e9-bf4a-b33aa96844e3",
                 "resourcePath": "scripts\\read_controls\\read_controls.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "26797ab5-b1dc-4d8c-8977-c2c4cccaa061",
+            "Value": {
+                "id": "f2dd0d1e-cdd8-4728-a6a2-24267b994ff1",
+                "resourcePath": "sprites\\sOkaimu\\sOkaimu.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1092,6 +1116,14 @@
                 "id": "95f1d4a2-f87e-4094-afc7-0eb05003316d",
                 "resourcePath": "objects\\oPlayerStats\\oPlayerStats.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "62611110-72cb-41d8-95bd-480f29d59443",
+            "Value": {
+                "id": "e68611f6-c20a-458f-9237-8c88bcdce4c7",
+                "resourcePath": "scripts\\state_okaimu_stand\\state_okaimu_stand.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2591,6 +2623,7 @@
         "efcae412-2ed6-4bd5-80c8-ceb387ef16d9",
         "9ead9e48-6a88-49ee-9c55-be69148b2401",
         "4bb7d29a-1a7d-4c52-8221-60b357fd6a31",
+        "62611110-72cb-41d8-95bd-480f29d59443",
         "1f8ce49d-e15e-4f8a-830d-4d17a70c2360",
         "1a218ea6-caa5-4f95-80fd-f0f8202513da",
         "96c96512-fa40-4613-8794-fa6c9d187d95",

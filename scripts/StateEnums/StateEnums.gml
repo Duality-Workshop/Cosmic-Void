@@ -20,3 +20,17 @@ enum States
 	wall_jump
 }
 
+enum EnemyStates
+{
+	STAND,
+	IDLE,
+	APPROACH,
+	BACK,
+	JUMP,
+	FALL,
+	LAND,
+	ATTACK,
+	FLEE,
+	HIT,
+	DIE
+}
