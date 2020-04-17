@@ -40,5 +40,7 @@ max_distance = 128;
 horizontal_speed = 0;
 vertical_speed = 0;
 
+sight = false;
+
 target_x = 0;
 target_y = 0;

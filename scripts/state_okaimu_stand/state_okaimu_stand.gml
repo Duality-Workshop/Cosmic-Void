@@ -8,14 +8,16 @@ if(argument0==step)
 	}
 	
 	var feryuu_x = obj_ap_feryuu.x;
-	var feryuu_y = obj_ap_feryuu.y;
-	var sight = not collision_line(x, y-32, feryuu_x, feryuu_y, oWall, false, true);
+	var feryuu_y = obj_ap_feryuu.y-obj_ap_feryuu.sprite_height/2;
+	sight = not collision_line(x, y-sprite_height/2, feryuu_x, feryuu_y, _solid_parent, false, true);
 	var distance = distance_to_object(obj_ap_feryuu);
 	
 	if (sight) {
 	    target_x = feryuu_x;
 		target_y = feryuu_y;
 	}
+	
+	horizontal_speed = Approach(horizontal_speed, 0, 1);
 	
 	//IDLE
 	if (state_timer > idle_time) {
