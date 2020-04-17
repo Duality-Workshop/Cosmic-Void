@@ -64,14 +64,14 @@ booster_max_speed = 2;
 dash_speed = move_max_speed * booster_speed;
 has_dashed = false;
 
-/*max_hp = oPlayerStats.max_hp;
+max_hp = oPlayerStats.max_hp;
 hp = oPlayerStats.hp;
 
 max_shield = oPlayerStats.max_shield;
 shield = oPlayerStats.shield;
 shield_regen = oPlayerStats.shield_regen;
 shield_regen_delay_base = oPlayerStats.shield_regen_delay;
-shield_regen_delay = shield_regen_delay_base;*/
+shield_regen_delay = shield_regen_delay_base;
 
 
 invicibility_frames_base = 60;

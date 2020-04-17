@@ -9,14 +9,7 @@ if (variable_instance_exists(target, "shield"))
 {
 	if (target.shield > 0)
 	{
-		if (target.shield >= amount)
-		{
-			target.shield -= amount;
-		}
-		else
-		{
-			target.shield = 0;
-		}
+		target.shield = Approach(target.shield, 0, amount);
 		
 		target.shield_regen_delay = target.shield_regen_delay_base;
 		
@@ -26,9 +19,9 @@ if (variable_instance_exists(target, "shield"))
 			var xp = target.x;
 			var yp = target.y;
 	
-			part_type_direction(global.pt_dash_thruster, pb_dir-pb_width, pb_dir+pb_width, 0, 0);
-			part_emitter_region(global.ps, global.pe_dash_thruster, xp-16, xp+16, yp-16, yp+16, ps_shape_ellipse, ps_distr_linear);
-			part_emitter_burst(global.ps, global.pe_dash_thruster, global.pt_dash_thruster, 75);
+			part_type_direction(global.pt_Thruster, pb_dir-pb_width, pb_dir+pb_width, 0, 0);
+			part_emitter_region(global.ps, global.pe_Thruster, xp-16, xp+16, yp-16, yp+16, ps_shape_ellipse, ps_distr_linear);
+			part_emitter_burst(global.ps, global.pe_Thruster, global.pt_Thruster, 75);
 		}
 		
 		exit;

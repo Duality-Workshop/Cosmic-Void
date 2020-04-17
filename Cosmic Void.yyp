@@ -1383,6 +1383,14 @@
             }
         },
         {
+            "Key": "7a7a5f33-3bb2-480e-a1d3-b62c510e02e9",
+            "Value": {
+                "id": "d263e63c-49e3-414f-91fa-a5d30a83bfe2",
+                "resourcePath": "scripts\\GiveDamage\\GiveDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7a9b4bbd-4a0f-4d4a-ad32-a5ea7b0c3ed2",
             "Value": {
                 "id": "a4534bfb-30af-4143-8e78-204568ffb337",
@@ -1756,6 +1764,14 @@
                 "id": "5e376e64-4ef5-424f-b053-0c61aeddf2f1",
                 "resourcePath": "views\\a25b1f42-c09b-482a-bbfc-67f4e665e3cb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a2b953c1-3672-41c2-a437-74e6c52725cc",
+            "Value": {
+                "id": "c28a27ac-8e6f-4f2f-bd3f-e62b7cfc468a",
+                "resourcePath": "shaders\\shRed\\shRed.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -2741,7 +2757,8 @@
         "9cd6f536-048d-45c5-9b93-6edb36290086",
         "23ddf00f-015a-493b-89c4-68e0f8f31453",
         "86e065f7-5251-47f5-85b1-1f2ffbd5ecf6",
-        "05b0832e-33f9-4871-a420-8ed0f597ea02"
+        "05b0832e-33f9-4871-a420-8ed0f597ea02",
+        "7a7a5f33-3bb2-480e-a1d3-b62c510e02e9"
     ],
     "tutorial": ""
 }

@@ -25,14 +25,17 @@ truestate_set_default(EnemyStates.STAND);
 max_hp = 10;
 hp = max_hp;
 
+strength = 5;
+
 walk_speed = 5;
 jump_strength = 10;
-weight = 5;
+attack_speed = 20;
 
 face_direction = 1;
 
 idle_time = 500;
 attack_time = 60;
+attack_windup_time = 30;
 land_time = 20;
 
 min_distance = 64;
@@ -48,3 +51,7 @@ target_y = 0;
 
 target_side = 0;
 target_direction = 0;
+
+has_attacked = false;
+has_hit = false;
+has_landed = false;

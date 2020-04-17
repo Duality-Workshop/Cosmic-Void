@@ -7,6 +7,11 @@ bbox_h = bbox_bottom + 1 - bbox_top;
 
 events[e_draw] ++;
 
+if (global.debug) {
+    draw_text(x, y-130, "HP: " + string(hp) + " / " + string(max_hp));
+    draw_text(x, y-100, "Shield: " + string(shield) + " / " + string(max_shield));
+}
+
 //draw_text(x, y-75, string(display_get_gui_width()) + "x" + string(display_get_gui_height()))
 /*truestate_draw_current(x, y - 75);
 draw_text(x, y - 100, [global.time_dilation, global.time_delta]);
