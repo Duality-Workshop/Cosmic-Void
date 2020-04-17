@@ -12,10 +12,21 @@ if(argument0==step)
 		target_y = feryuu_y;
 	}
 	
-	var target_side = IsBetween(point_direction(x, y-sprite_height/2, target_x, target_y), 90, 270) ? -1 : 1;
+	target_direction = point_direction(x, y-sprite_height/2, target_x, target_y);
+	target_side = IsBetween(target_direction, 90, 270) ? -1 : 1;
 	
 	horizontal_speed = Approach(horizontal_speed, walk_speed, 1);
 	var next_position = horizontal_speed * target_side;
+	
+	//JUMP
+	if ((place_meeting(x+next_position*10, y-1, _solid_parent)
+		and not place_meeting(x+next_position, y-33, _solid_parent))
+		or
+		(not place_meeting(x+next_position*10, y+1, _solid_parent)
+		and target_direction < 180))
+	{
+	    truestate_switch(EnemyStates.JUMP)
+	}
 	
 	while (place_meeting(x+next_position, y-1, _solid_parent)) {
 	    next_position = Approach(next_position, 0, 1);
@@ -34,9 +45,8 @@ if(argument0==step)
 	    truestate_switch(EnemyStates.BACK)
 	}
 	
-	//JUMP
 	//FALL
-	if (not position_meeting(x, y + 1, _solid_parent)) {
+	if (not place_meeting(x, y + 1, _solid_parent)) {
 	    truestate_switch(EnemyStates.FALL);
 	}
 	

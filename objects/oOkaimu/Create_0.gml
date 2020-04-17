@@ -33,6 +33,7 @@ face_direction = 1;
 
 idle_time = 500;
 attack_time = 60;
+land_time = 20;
 
 min_distance = 64;
 max_distance = 128;
@@ -44,3 +45,6 @@ sight = false;
 
 target_x = 0;
 target_y = 0;
+
+target_side = 0;
+target_direction = 0;

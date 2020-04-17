@@ -2,23 +2,26 @@
 if(argument0==step)
 {
 	//This code will be executed during the step event.
-	if(state_new)
-	{
-		has_dashed = false;
+	
+	var next_position_x = horizontal_speed * target_side;
+	var next_position_y = vertical_speed;
+	
+	while (place_meeting(x+next_position_x, y, _solid_parent)) {
+	    next_position_x = Approach(next_position_x, 0, 1);
 	}
 	
-	vertical_speed = Approach(vertical_speed, weight, 1);
-	var next_position = vertical_speed;
-	
-	while (position_meeting(x, y+next_position, _solid_parent)) {
-	    next_position = Approach(next_position, 0, 1);
+	while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
+	    next_position_y = Approach(next_position_y, 0, 1);
 	}
 	
-	y += next_position;
+	x += next_position_x;
+	y += next_position_y;
+	
+	vertical_speed++;
 	
 	
 	//LAND
-	if (position_meeting(x, y+next_position, _solid_parent)) {
+	if (place_meeting(x, y+1, _solid_parent)) {
 	    truestate_switch(EnemyStates.LAND);
 	}
 	

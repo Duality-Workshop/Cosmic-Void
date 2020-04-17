@@ -38,7 +38,7 @@ if(argument0==step)
 	// condition?
 	
 	//FALL
-	if (not position_meeting(x, y + 1, _solid_parent)) {
+	if (not place_meeting(x, y + 1, _solid_parent)) {
 	    truestate_switch(EnemyStates.FALL);
 	}
 	

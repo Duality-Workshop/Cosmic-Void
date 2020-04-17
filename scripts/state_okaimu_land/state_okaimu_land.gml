@@ -12,14 +12,10 @@ if(argument0==step)
 	var sight = collision_line(x, y, feryuu_x, feryuu_y, oWall, false, true);
 	
 	//STAND
-	//IDLE
-	//APPROACH
-	//BACK
-	//JUMP
-	//FALL
-	//LAND
-	//ATTACK
-	//FLEE
+	if (state_timer > land_time) {
+	    truestate_switch(EnemyStates.STAND);
+	}
+	
 	//HIT
 	//DIE
 	if(hp <= 0)

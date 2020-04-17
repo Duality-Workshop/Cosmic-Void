@@ -4,22 +4,30 @@ if(argument0==step)
 	//This code will be executed during the step event.
 	if(state_new)
 	{
-		has_dashed = false;
+		vertical_speed = jump_strength * -1;
 	}
 	
-	var feryuu_x = obj_ap_feryuu.x;
-	var feryuu_y = obj_ap_feryuu.y;
-	var sight = collision_line(x, y, feryuu_x, feryuu_y, oWall, false, true);
+	var next_position_x = horizontal_speed * target_side;
+	var next_position_y = vertical_speed;
 	
-	//STAND
-	//IDLE
-	//APPROACH
-	//BACK
-	//JUMP
+	while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
+	    next_position_x = Approach(next_position_x, 0, 1);
+	}
+	
+	while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
+	    next_position_y = Approach(next_position_y, 0, 1);
+	}
+	
+	x += next_position_x;
+	y += next_position_y;
+	
+	vertical_speed--;
+	
 	//FALL
-	//LAND
-	//ATTACK
-	//FLEE
+	if (next_position_y <= 0) {
+	    truestate_switch(EnemyStates.FALL);
+	}
+	
 	//HIT
 	//DIE
 	if(hp <= 0)
