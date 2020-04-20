@@ -34,7 +34,7 @@ attack_speed = 20;
 face_direction = 1;
 
 idle_time = 500;
-attack_time = 60;
+attack_time = 120;
 attack_windup_time = 30;
 land_time = 20;
 

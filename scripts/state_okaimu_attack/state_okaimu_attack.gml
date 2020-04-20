@@ -33,9 +33,6 @@ if(argument0==step)
 		
 		while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
 			next_position_x = Approach(next_position_x, 0, 1);
-		}
-	
-		while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
 			next_position_y = Approach(next_position_y, 0, 1);
 		}
 	
@@ -56,6 +53,7 @@ if(argument0==step)
 	
 	//STAND
 	if (has_landed) {
+		ds_list_delete(oOkaimuTracker.attack_list, ds_list_find_index(oOkaimuTracker.attack_list, id));
 	    truestate_switch(EnemyStates.STAND);
 	}
 	
@@ -63,6 +61,7 @@ if(argument0==step)
 	//DIE
 	if(hp <= 0)
 	{
+		ds_list_delete(oOkaimuTracker.attack_list, ds_list_find_index(oOkaimuTracker.attack_list, id));
 		truestate_switch(EnemyStates.DIE);	
 	}
 }

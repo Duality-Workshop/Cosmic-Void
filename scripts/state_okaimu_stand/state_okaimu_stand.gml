@@ -44,7 +44,12 @@ if(argument0==step)
 	
 	//ATTACK
 	if (sight and IsBetween(distance, min_distance, max_distance) and state_timer > attack_time) {
-	    truestate_switch(EnemyStates.ATTACK);
+	    if (ds_list_size(oOkaimuTracker.attack_list) < 2) {
+		    ds_list_add(oOkaimuTracker.attack_list, id);
+			truestate_switch(EnemyStates.ATTACK);
+		} else {
+			state_timer = 0; // bad practice but works best here
+		}
 	}
 	
 	//FLEE
