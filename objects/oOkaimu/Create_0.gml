@@ -25,7 +25,7 @@ truestate_set_default(EnemyStates.STAND);
 max_hp = 10;
 hp = max_hp;
 
-strength = 5;
+strength = 2;
 
 walk_speed = 5;
 jump_strength = 10;

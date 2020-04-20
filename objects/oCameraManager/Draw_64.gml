@@ -30,10 +30,17 @@ sp_w = sprite_get_width(sHealthContainer);
 
 var _w = sp_w * sp_scale;
 var _x = offset;
-while (_x + _w < offset + width) {
-    draw_sprite_ext(sHealthContainer, 0, _x, base_offset * 2, sp_scale, sp_scale, 0, c_white, 1);
+var _spr = sHealthContainer;
+for (var i = 0; i < feryuu.max_hp; ++i) {
+	_spr = i < feryuu.hp ? sHealthContainer : sHealthContainerEmpty;
+    draw_sprite_ext(_spr, 0, _x, base_offset * 2, sp_scale, sp_scale, 0, c_white, 1);
 	_x += _w + base_offset;
 }
+
+/*while (_x + _w < offset + width) {
+    draw_sprite_ext(sHealthContainer, 0, _x, base_offset * 2, sp_scale, sp_scale, 0, c_white, 1);
+	_x += _w + base_offset;
+}*/
 
 var x1 = offset;
 var y1 = (base_offset * 2) + sp_w * sp_scale + base_offset;

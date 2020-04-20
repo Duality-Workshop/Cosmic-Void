@@ -9,3 +9,5 @@ hexagon_x = 0;
 hexagon_y = 0;
 
 camera_set_size();
+
+feryuu = obj_ap_feryuu;
