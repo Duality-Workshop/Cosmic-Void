@@ -112,5 +112,4 @@ else if(argument0==draw)
 	    audio_play_sound(Jump, 10, false)
 	}
 	
-	draw_self_facing();
 }

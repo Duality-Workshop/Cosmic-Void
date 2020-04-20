@@ -41,5 +41,4 @@ else if(argument0==draw)
 		sprite_index=sFeryuu;
 		image_speed = 1;
 	}
-	draw_self_facing();
 }

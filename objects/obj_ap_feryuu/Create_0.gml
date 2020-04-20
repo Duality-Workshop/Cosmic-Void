@@ -73,6 +73,10 @@ shield_regen = oPlayerStats.shield_regen;
 shield_regen_delay_base = oPlayerStats.shield_regen_delay;
 shield_regen_delay = shield_regen_delay_base;
 
+is_regenerating = false;
+
+_uwave = shader_get_uniform(shAquaWave, "u_wave");
+
 
 invicibility_frames_base = 60;
 

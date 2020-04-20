@@ -73,5 +73,4 @@ else if(argument0==draw)
 		sprite_index=sFeryuu;	
 	}
 	
-	draw_self_facing();
 }

@@ -7,6 +7,17 @@ bbox_h = bbox_bottom + 1 - bbox_top;
 
 events[e_draw] ++;
 
+
+if (is_regenerating) {
+    shader_set(shAquaWave);
+	shader_set_uniform_f(_uwave, Wave(0, 1, 1, 0));
+	draw_self_facing();
+	shader_reset();
+} else {
+	draw_self_facing();
+}
+
+
 if (global.debug) {
     draw_text(x, y-130, "HP: " + string(hp) + " / " + string(max_hp));
     draw_text(x, y-100, "Shield: " + string(shield) + " / " + string(max_shield));
