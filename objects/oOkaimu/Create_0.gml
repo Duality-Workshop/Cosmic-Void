@@ -27,7 +27,7 @@ hp = max_hp;
 
 strength = 2;
 
-walk_speed = 5;
+walk_speed = 5 * Deviation(.2);
 jump_strength = 10;
 attack_speed = 20;
 
@@ -41,6 +41,7 @@ flee_time = 30;
 
 min_distance = 64;
 max_distance = 128;
+min_self_distance = 32;
 
 horizontal_speed = 0;
 vertical_speed = 0;
@@ -59,3 +60,5 @@ has_landed = false;
 is_hit = false;
 
 hit_direction = 0;
+
+nearest_similar_distance = 0;

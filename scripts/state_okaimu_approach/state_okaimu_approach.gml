@@ -15,7 +15,26 @@ if(argument0==step)
 	target_direction = point_direction(x, y-sprite_height/2, target_x, target_y);
 	target_side = IsBetween(target_direction, 90, 270) ? -1 : 1;
 	
+	x += 100000;
+	var nearest_similar = instance_nearest(x-100000, y, oOkaimu);
+	x -= 100000;
+	
+	nearest_similar_distance = distance_to_point(nearest_similar.x, nearest_similar.y);
+	
+	if (nearest_similar_distance < min_self_distance) {
+	    var potential_next_x = x + Approach(horizontal_speed, walk_speed, 1) * target_side;
+	    var potential_next_y = y;
+			show_debug_message("STOP?");
+		
+		if (point_distance(potential_next_x, potential_next_y, nearest_similar.x, nearest_similar.y) < nearest_similar_distance) {
+		    horizontal_speed = 0;
+			show_debug_message("STOP");
+		}
+	}
+	
 	horizontal_speed = Approach(horizontal_speed, walk_speed, 1);
+	
+	
 	var next_position = horizontal_speed * target_side;
 	
 	//JUMP
@@ -50,7 +69,6 @@ if(argument0==step)
 	    truestate_switch(EnemyStates.FALL);
 	}
 	
-	//FLEE?
 	//HIT
 	if (is_hit) {
 		truestate_switch(EnemyStates.HIT);

@@ -14,7 +14,15 @@ if(argument0==step)
 	
 	var target_side = IsBetween(point_direction(x, y-sprite_height/2, target_x, target_y), 90, 270) ? -1 : 1;
 	
-	horizontal_speed = Approach(horizontal_speed, walk_speed, 1);
+	x += 100000;
+	var nearest_similar = instance_nearest(x-100000, y, oOkaimu);
+	x -= 100000;
+	
+	nearest_similar_distance = distance_to_point(nearest_similar.x, nearest_similar.y);
+	
+	horizontal_speed = nearest_similar_distance < min_self_distance ? 0 : Approach(horizontal_speed, walk_speed, 1);
+	
+	
 	var next_position = horizontal_speed * target_side * -1;
 	
 	while (place_meeting(x+next_position, y-1, _solid_parent)) {
