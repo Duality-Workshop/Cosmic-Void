@@ -37,6 +37,7 @@ idle_time = 500;
 attack_time = 120;
 attack_windup_time = 30;
 land_time = 20;
+flee_time = 30;
 
 min_distance = 64;
 max_distance = 128;
@@ -55,3 +56,6 @@ target_direction = 0;
 has_attacked = false;
 has_hit = false;
 has_landed = false;
+is_hit = false;
+
+hit_direction = 0;

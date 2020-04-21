@@ -36,6 +36,7 @@ if (current_delay == 0 and projectile != noone) {
 	    direction = other.direction;
 		speed = other.bulletspeed;
 		image_angle = direction;
+		damage = other.damage;
 		ScreenShake(other.recoil, 10);
 	}
 	

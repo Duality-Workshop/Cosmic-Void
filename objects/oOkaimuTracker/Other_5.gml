@@ -3,3 +3,4 @@
 
 //ds_list_clear(attack_list);
 ds_list_destroy(attack_list);
+ds_list_destroy(sight_list);

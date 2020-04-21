@@ -29,6 +29,10 @@ if(argument0==step)
 	}
 	
 	//HIT
+	if (is_hit) {
+		truestate_switch(EnemyStates.HIT);
+	}
+	
 	//DIE
 	if(hp <= 0)
 	{

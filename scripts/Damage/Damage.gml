@@ -5,8 +5,11 @@
 var target = argument0;
 var amount = argument1;
 
-if (target.is_blinking) { // no damage on invicibility frames
-    exit;
+if (variable_instance_exists(target, "is_blinking"))
+{
+	if (target.is_blinking) { // no damage on invicibility frames
+		exit;
+	}
 }
 
 if (variable_instance_exists(target, "shield"))

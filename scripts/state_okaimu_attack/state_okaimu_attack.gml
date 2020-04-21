@@ -25,7 +25,6 @@ if(argument0==step)
 		if (not has_hit and place_meeting(x, y, obj_ap_feryuu)) {
 		    has_hit = true;
 			Damage(obj_ap_feryuu, strength);
-			show_debug_message("HIT");
 		}
 		
 		var next_position_x = horizontal_speed * target_side;
@@ -58,6 +57,10 @@ if(argument0==step)
 	}
 	
 	//HIT
+	if (is_hit) {
+		truestate_switch(EnemyStates.HIT);
+	}
+	
 	//DIE
 	if(hp <= 0)
 	{

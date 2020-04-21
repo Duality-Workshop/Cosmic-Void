@@ -52,6 +52,10 @@ if(argument0==step)
 	
 	//FLEE?
 	//HIT
+	if (is_hit) {
+		truestate_switch(EnemyStates.HIT);
+	}
+	
 	//DIE
 	if(hp <= 0)
 	{

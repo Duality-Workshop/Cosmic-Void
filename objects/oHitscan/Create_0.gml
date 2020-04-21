@@ -1,5 +1,6 @@
 dist = 0;
 target = noone;
+is_target_enemy = false;
 lifetime = 20;
 alarm[0] = lifetime;
 alpha = 1;

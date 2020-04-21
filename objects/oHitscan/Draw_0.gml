@@ -4,3 +4,7 @@ if (target != noone and !hit) {
 	effect_create_above(ef_firework, x + lengthdir_x(dist, direction), y + lengthdir_y(dist, direction), .1, color);
 	hit = true;
 }
+
+if (global.debug) {
+    draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,false);
+}
