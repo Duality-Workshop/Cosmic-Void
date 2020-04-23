@@ -1943,6 +1943,14 @@
             }
         },
         {
+            "Key": "b1575c38-4986-4ec8-9035-e8ed395f10c5",
+            "Value": {
+                "id": "59e4a6d2-75bc-4557-a715-80d296210b3e",
+                "resourcePath": "sounds\\BGM_Forest\\BGM_Forest.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b210348b-8f31-46b9-87de-edf4adb6309d",
             "Value": {
                 "id": "0115f4ec-0d7c-4ed1-b718-35ee62664624",
