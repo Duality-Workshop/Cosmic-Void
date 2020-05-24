@@ -13,7 +13,7 @@ truestate_create_state(States.land,state_ap_feryuu_land, "Land");
 truestate_create_state(States.run,state_ap_feryuu_run, "Run");
 //truestate_create_state(States.slide,state_ap_feryuu_slide, "Slide");
 //truestate_create_state(States.shoot,state_ap_feryuu_shoot, "Shoot");
-//truestate_create_state(States.strike,state_ap_feryuu_strike, "Strike");
+truestate_create_state(States.strike,state_ap_feryuu_strike, "Strike");
 truestate_create_state(States.wall_slide,state_ap_feryuu_wall_slide, "Wall Slide");
 truestate_create_state(States.wall_jump,state_ap_feryuu_wall_jump, "Wall Jump");
 //truestate_create_state(States.ledge_grab,state_ap_feryuu_ledge_grab, "Ledge Grab");
@@ -48,6 +48,35 @@ controller = 0;
 has_control = true;
 
 is_striking = false;
+strike_timer = 25;
+
+strike_state = StrikeSubState.NONE;
+next_strike_state = StrikeSubState.NONE;
+strike_previous_state = strike_state;
+strike_sprite = sFeryuu;
+next_strike_sprite = noone;
+strike_mask = noone;
+next_strike_mask = noone;
+
+targets_hit_by_strike = ds_list_create();
+
+enum StrikeSubState {
+	NONE,
+	LAND_NEUTRAL_1,
+	LAND_NEUTRAL_2,
+	LAND_NEUTRAL_3,
+	LAND_FORWARD_1,
+	LAND_FORWARD_2,
+	LAND_FORWARD_3,
+	LAND_FORWARD_FINAL,
+	LAND_BACK,
+	LAND_DOWN,
+	LAND_UP,
+	AIR_UP,
+	AIR_NEUTRAL,
+	AIR_FORWARD,
+	AIR_DOWN
+}
 
 jump_speed = 5.0;
 jump_speed_dec = 1.5;

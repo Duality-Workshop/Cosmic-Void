@@ -10,11 +10,7 @@ enum States
 	fall,
 	land,
 	slide,
-	attack_b,
-	attack_c,
-	air_attack_a,
-	air_attack_b,
-	air_attack_c,
+	strike,
 	wall_slide,
 	wall_kick,
 	wall_jump

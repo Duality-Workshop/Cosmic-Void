@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "091f762e-8c28-41f8-a66e-875dcf4b6925",
+            "Value": {
+                "id": "77c5415e-f6ff-495d-9d69-8964e68b7206",
+                "resourcePath": "objects\\oEnemy_Debug\\oEnemy_Debug.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0baed88c-808c-43ed-a511-81dedb3be50e",
             "Value": {
                 "id": "94ac06c9-e179-4ba1-8751-2ae769cf8d4f",
@@ -323,6 +331,14 @@
             "Value": {
                 "id": "3789f789-c56c-4b61-8610-db12dc7319bf",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "190bc611-9293-4627-9f4f-1ed160c9eb85",
+            "Value": {
+                "id": "3489f16a-5015-47cf-97ca-8da8b561ba23",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral3\\sFeryuuStrikeGroundNeutral3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -751,6 +767,14 @@
             }
         },
         {
+            "Key": "3aae4896-7e04-45e6-b763-b1d6ccf34327",
+            "Value": {
+                "id": "99da0364-fadd-4595-8a14-ee850bc7bd18",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral2\\sFeryuuStrikeGroundNeutral2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b7e1832-9a17-493e-a58f-d155ef021859",
             "Value": {
                 "id": "23e14b2a-a1c7-496d-a99c-3120209e96e4",
@@ -883,6 +907,14 @@
             "Value": {
                 "id": "f5cb962c-3f12-4edb-b164-68f8f601b162",
                 "resourcePath": "scripts\\round_n\\round_n.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "48956a0f-b9ac-4e98-bc7e-279610e7bf85",
+            "Value": {
+                "id": "48e300bd-3f1f-44b5-b6b1-82a5adce5ed3",
+                "resourcePath": "scripts\\state_ap_feryuu_strike\\state_ap_feryuu_strike.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1167,6 +1199,22 @@
             }
         },
         {
+            "Key": "61c3298b-4736-4cb4-babe-4b6b969a1d93",
+            "Value": {
+                "id": "6825d909-85f1-4c8d-bc22-bb25dc35c23a",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral1\\sFeryuuStrikeGroundNeutral1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "621c27b2-1547-4fc8-99a0-88f9c31fdc06",
+            "Value": {
+                "id": "fc7cfc8b-dc1b-4c06-806d-d11308e87996",
+                "resourcePath": "scripts\\state_debug_stand\\state_debug_stand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6239d2df-4758-4302-b683-4944def0ebe6",
             "Value": {
                 "id": "95f1d4a2-f87e-4094-afc7-0eb05003316d",
@@ -1383,6 +1431,14 @@
             }
         },
         {
+            "Key": "761823dc-6353-4613-af02-3f06573982c8",
+            "Value": {
+                "id": "35070eff-478b-4c55-b7a9-c52912def60b",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral1HurtBox\\sFeryuuStrikeGroundNeutral1HurtBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "77467450-9df0-483a-bf1e-f99c9f16fa4d",
             "Value": {
                 "id": "76f51e6f-e492-45ab-bca0-d5a7207e3136",
@@ -1500,6 +1556,14 @@
                 "id": "0add3c39-bd34-4e62-9136-3af47a6da81e",
                 "resourcePath": "sounds\\Slide\\Slide.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "84d55458-d125-4c12-a222-5dfd3a7fd39d",
+            "Value": {
+                "id": "92bf43b4-900d-413c-aa2f-7ea28f2163af",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral3HurtBox\\sFeryuuStrikeGroundNeutral3HurtBox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1887,6 +1951,14 @@
             }
         },
         {
+            "Key": "ac53a177-2224-4f4c-bd5b-fa723b8ef8ac",
+            "Value": {
+                "id": "39bdc9b2-6343-4086-8dc1-daf197d3f96c",
+                "resourcePath": "sprites\\sFeryuuStrikeGroundNeutral2HurtBox\\sFeryuuStrikeGroundNeutral2HurtBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "accda64b-ecd8-41f6-9797-4960367570fb",
             "Value": {
                 "id": "ada8a3e1-04d0-4ae4-a644-b8d7787b2dc6",
@@ -2260,6 +2332,14 @@
                 "id": "f5a503c5-dd5f-4da8-8840-0171be49b11e",
                 "resourcePath": "sprites\\spr_pt_shape_explosion_new\\spr_pt_shape_explosion_new.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d08cb2f9-302e-4fb0-bd0e-8de6caa05f95",
+            "Value": {
+                "id": "ea9e5652-a713-4aa9-91bd-65320c8fdf35",
+                "resourcePath": "scripts\\DebugEnemyAI\\DebugEnemyAI.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2767,6 +2847,7 @@
         "efcae412-2ed6-4bd5-80c8-ceb387ef16d9",
         "9ead9e48-6a88-49ee-9c55-be69148b2401",
         "4bb7d29a-1a7d-4c52-8221-60b357fd6a31",
+        "48956a0f-b9ac-4e98-bc7e-279610e7bf85",
         "62611110-72cb-41d8-95bd-480f29d59443",
         "e94f2ea1-445e-49b5-bb58-61162b9634e0",
         "dc66871e-259c-459b-9306-00b352ce5abf",
@@ -2800,7 +2881,9 @@
         "05b0832e-33f9-4871-a420-8ed0f597ea02",
         "7a7a5f33-3bb2-480e-a1d3-b62c510e02e9",
         "08215fc6-3586-46dc-9252-3a7d6ed3b8a0",
-        "5e78613b-4639-4b61-a89f-ba4ce5f92bfa"
+        "5e78613b-4639-4b61-a89f-ba4ce5f92bfa",
+        "d08cb2f9-302e-4fb0-bd0e-8de6caa05f95",
+        "621c27b2-1547-4fc8-99a0-88f9c31fdc06"
     ],
     "tutorial": ""
 }

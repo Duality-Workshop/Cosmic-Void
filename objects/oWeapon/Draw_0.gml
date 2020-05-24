@@ -1,4 +1,4 @@
-if (sprite != noone) {
+if (sprite != noone and player.state != States.strike) {
     draw_sprite_ext(
 		sprite,
 		image_index,

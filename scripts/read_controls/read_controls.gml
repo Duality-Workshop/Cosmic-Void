@@ -57,13 +57,22 @@ else
 	dpad_dir=no_direction;
 	
 _key = mb_left;
-_button = gp_face1;
-confirm[pressed] = mouse_check_button_pressed(_key) or gamepad_button_check_pressed(0, _button);
-confirm[released] = mouse_check_button_released(_key) or gamepad_button_check_released(0, _button);
+_button = gp_shoulderrb;
+shoot[pressed] = mouse_check_button_pressed(_key) or gamepad_button_check_pressed(0, _button);
+shoot[released] = mouse_check_button_released(_key) or gamepad_button_check_released(0, _button);
 if(mouse_check_button(_key) or gamepad_button_check(0, _button))
-	confirm[held]++;
+	shoot[held]++;
 else
-	confirm[held]=0;
+	shoot[held]=0;
+	
+_key = mb_right;
+_button = gp_face3;
+strike[pressed] = mouse_check_button_pressed(_key) or gamepad_button_check_pressed(0, _button);
+strike[released] = mouse_check_button_released(_key) or gamepad_button_check_released(0, _button);
+if(mouse_check_button(_key) or gamepad_button_check(0, _button))
+	strike[held]++;
+else
+	strike[held]=0;
 
 /*key_left = keyboard_check(vk_left) or keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));

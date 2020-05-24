@@ -19,12 +19,18 @@ if (is_regenerating) {
 
 
 if (global.debug) {
-    draw_text(x, y-130, "HP: " + string(hp) + " / " + string(max_hp));
-    draw_text(x, y-100, "Shield: " + string(shield) + " / " + string(max_shield));
+	truestate_draw_current(x, y - 75);
+	draw_text(x, y-130, "Strike state: " + string(strike_state));
+	draw_text(x, y-100, 
+		"Speed: " + string(image_speed) + 
+		", Index: " + string(image_index) + 
+		", Number: " + string(image_number));
+    /*draw_text(x, y-130, "HP: " + string(hp) + " / " + string(max_hp));
+    draw_text(x, y-100, "Shield: " + string(shield) + " / " + string(max_shield));*/
 }
 
 //draw_text(x, y-75, string(display_get_gui_width()) + "x" + string(display_get_gui_height()))
-/*truestate_draw_current(x, y - 75);
+/*
 draw_text(x, y - 100, [global.time_dilation, global.time_delta]);
 draw_text(x, y - 125, [hspd, x - xprevious]);
 draw_circle_color(x+(bbox_w/2)+1, y, 1, noone, c_lime, true);

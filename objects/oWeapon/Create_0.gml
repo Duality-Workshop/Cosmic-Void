@@ -9,6 +9,8 @@ current_cd = 0;
 current_delay = -1;
 current_recoil = 0;
 
+loaded = false;
+
 //debug
 /*var1 = WeaponType.PISTOL;
 var2 = WeaponType.RIFLE;

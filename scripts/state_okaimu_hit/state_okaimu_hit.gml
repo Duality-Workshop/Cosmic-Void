@@ -5,8 +5,8 @@ if(argument0==step)
 	if(state_new)
 	{
 		is_hit = false;
-		horizontal_speed = lengthdir_x(5, hit_direction);
-		vertical_speed = lengthdir_y(5, hit_direction);
+		horizontal_speed = lengthdir_x(10, hit_direction);
+		vertical_speed = lengthdir_y(10, hit_direction);
 		has_landed = false;
 		
 		var pos = ds_list_find_index(oOkaimuTracker.attack_list, id);
@@ -24,7 +24,7 @@ if(argument0==step)
 		
 		while (place_meeting(x+next_position_x, y+next_position_y, _solid_parent)) {
 			next_position_x = Approach(next_position_x, 0, 1);
-			next_position_y = Approach(next_position_y, 0, 1);
+			next_position_y = Approach(next_position_y, -1, 1);
 		}
 	
 		x += next_position_x;

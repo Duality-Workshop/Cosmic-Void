@@ -14,19 +14,26 @@ if(argument0==step)
 	{
 		truestate_switch(States.jump);	
 	}
+	
 	// DASH
 	// FALL
 	if(!against_wall[bottom_wall])
 	{	//Walked off a ledge
 		truestate_switch(States.fall);
 	}
+	
 	// RUN
 	if(left[held] or right[held])
 	{
 		truestate_switch(States.run);	
 	}
+	
 	// SHOOT
 	// STRIKE
+	if (strike[pressed]) {
+	    truestate_switch(States.strike);
+	}
+	
 	// HIT
 	// DIE
 	// RC

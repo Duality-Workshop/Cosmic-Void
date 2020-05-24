@@ -11,11 +11,15 @@ image_xscale = 0.5;
 
 image_angle = direction;
 
-var fire_button;
-if (automatic) {
-	fire_button = mouse_check_button(mb_left);
+var fire_button = false;
+if (variable_instance_exists(player, "shoot")) {
+    if (automatic) {
+		fire_button = player.shoot[held];
+	} else {
+		fire_button = player.shoot[pressed];
+	}
 } else {
-	fire_button = mouse_check_button_pressed(mb_left);
+	loaded = true;
 }
 
 if (fire_button) {

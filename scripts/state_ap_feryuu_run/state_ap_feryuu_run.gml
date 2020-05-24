@@ -46,6 +46,10 @@ if(argument0==step)
 	// SLIDE
 	// SHOOT
 	// STRIKE
+	if (strike[pressed]) {
+	    truestate_switch(States.strike);
+	}
+	
 	// HIT
 	// DIE
 	// RC
